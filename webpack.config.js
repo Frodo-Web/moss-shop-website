@@ -4,13 +4,13 @@ module.exports={
 	mode: "development", 
 	entry: "./src/index.js", 
 	output: {
-		path: path.resolve(__dirname, "public"),
+		path: path.resolve(__dirname, "docs"),
 		filename: "main.js"
 	},
 	target: "web",
 	devServer: {
 		port: "9500",
-		static: ["./public"],
+		static: ["./docs"],
 		open: true,
 		hot: true ,
 		liveReload: true
