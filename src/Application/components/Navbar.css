@@ -1,0 +1,106 @@
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    --theme-background: #fdfdfd;
+    --theme-color: black;
+    --theme-hover: rgba(0, 0, 0, 0.3);
+    background-color: var(--theme-background);
+    transition: var(--theme-transition);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.black-theme .nav {
+    --theme-background: black;
+    --theme-color: white;
+    --theme-hover: rgba(255, 255, 255, 0.3);
+}
+
+.nav>.nav-header>.nav-title {
+    font-size: 22px;
+    color: var(--theme-color);
+    padding: 10px 10px 10px 10px;
+}
+.nav>.nav-header>.nav-title>img {
+    width: 150px;
+    height: auto;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+.nav>.nav-links>a:hover {
+    background-color: var(--theme-hover);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: var(--theme-hover);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid var(--theme-color);
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: var(--theme-background);
+        height: 0px;
+        transition: height 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        border-top: 2px solid var(--theme-color);
+        overflow-y: hidden;
+        /* overflow-y: auto; */
+    }
+}

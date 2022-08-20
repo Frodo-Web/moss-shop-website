@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div className='navbar'>
+        <div className='nav'>
             <Layout />
         </div>
     )
@@ -16,7 +16,20 @@ const Layout = () => {
 
     return (
         <>
-            <h2>Navbar</h2>
+            <input type="checkbox" id="nav-check" />
+            <div class="nav-header">
+                <div class="nav-title">
+                    {/* <img src='./images/moss.png'></img> */}
+                    Mox'Pro
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
             <Links />
         </>
     )
@@ -26,12 +39,12 @@ const Links = () => {
 
     return (
         <>
-            <nav className='links'>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='/catalog'>Catalog</NavLink>
-                <NavLink to='/portfolio'>Portfolio</NavLink>
-                <NavLink to='/special-deals'>Special Deals</NavLink>
-                <NavLink to='/contact'>Contact</NavLink>
+            <nav className='nav-links'>
+                <NavLink to='/'>О компании</NavLink>
+                <NavLink to='/catalog'>Каталог</NavLink>
+                <NavLink to='/portfolio'>Примеры работ</NavLink>
+                <NavLink to='/special-deals'>Акции</NavLink>
+                <NavLink to='/contact'>Контакты</NavLink>
             </nav>
         </>
     )

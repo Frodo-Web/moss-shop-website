@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    --theme-transition: color 0.5s linear, background-color 0.5s linear;
+    transition: var(--theme-transition);
+}
+
+a {
+
+}
+
+button {
+
+}
+
 .moss-shop-wrapper {
-    /* background-color: black;
-    height: 100vh; */
+}
+
+.black-theme {
+    background-color: black;
+    color: white;
+}
+a.black-theme {
+
+}
+button.black-theme {
+
 }

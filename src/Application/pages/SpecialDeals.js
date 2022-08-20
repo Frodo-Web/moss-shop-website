@@ -3,7 +3,7 @@ import './SpecialDeals.css';
 
 const SpecialDeals = () => {
 	return (
-	<h2>SpecialDeals</h2>
+	<h2>Специальные предложения</h2>
            )
 };
 
