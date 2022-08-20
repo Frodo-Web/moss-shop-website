@@ -18,10 +18,8 @@ const Layout = () => {
         <>
             <input type="checkbox" id="nav-check" />
             <div class="nav-header">
-                <div class="nav-title">
-                    {/* <img src='./images/moss.png'></img> */}
-                    Mox'Pro
-                </div>
+                <img src='./images/moss.png'></img>
+                <div class="nav-title">Mox'Pro</div>
             </div>
             <div class="nav-btn">
                 <label for="nav-check">
@@ -31,21 +29,36 @@ const Layout = () => {
                 </label>
             </div>
             <Links />
+            <ThemeToggle />
         </>
     )
 }
 
 const Links = () => {
+    const handleLinkClick = () => {
+        document.querySelector('.nav > .nav-btn > label').click();
+    }
 
     return (
         <>
             <nav className='nav-links'>
-                <NavLink to='/'>О компании</NavLink>
-                <NavLink to='/catalog'>Каталог</NavLink>
-                <NavLink to='/portfolio'>Примеры работ</NavLink>
-                <NavLink to='/special-deals'>Акции</NavLink>
-                <NavLink to='/contact'>Контакты</NavLink>
+                <NavLink onClick={handleLinkClick} to='/'>О компании</NavLink>
+                <NavLink onClick={handleLinkClick} to='/catalog'>Каталог</NavLink>
+                <NavLink onClick={handleLinkClick} to='/portfolio'>Примеры работ</NavLink>
+                <NavLink onClick={handleLinkClick} to='/special-deals'>Акции</NavLink>
+                <NavLink onClick={handleLinkClick} to='/contact'>Контакты</NavLink>
             </nav>
+        </>
+    )
+}
+
+const ThemeToggle = () => {
+    const handleClick = () => {
+        document.querySelector('body').classList.toggle("black-theme");
+    }
+    return (
+        <>
+            <button onClick={handleClick}></button>
         </>
     )
 }
