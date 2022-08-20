@@ -29,7 +29,6 @@ const Layout = () => {
 
     return (
         <>
-            <h2>Body</h2>
             <Outlet />
         </>
     )
