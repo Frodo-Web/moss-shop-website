@@ -62,6 +62,7 @@
     padding: 10px ;
     text-decoration: none;
     color: var(--theme-color);
+    border-radius: 7px;
 }
 .nav>.nav-links>a::after {
     position: absolute;
@@ -75,7 +76,7 @@
     transition: width .5s ease, background-color .5s ease;
 }
 .nav>.nav-links>a.active::after {
-    width: 100%;
+    width: 90%;
     background: var(--theme-color);
 }
 
