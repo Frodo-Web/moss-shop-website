@@ -19,6 +19,9 @@
     row-gap: var(--row-gap);
     padding: 10px;
 }
+.nav * {
+    transition: var(--theme-transition);
+}
 .black-theme .nav {
     --theme-background: rgb(34, 34, 34);
     --theme-links-background: rgb(34, 34, 34);

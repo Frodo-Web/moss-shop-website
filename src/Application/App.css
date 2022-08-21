@@ -6,6 +6,17 @@ body {
     color: black;
     --theme-transition: color 0.5s linear, background-color 0.5s linear;
     transition: var(--theme-transition);
+    position: relative;
+    min-height: 100%;
+}
+
+div#root {
+    position: relative;
+    min-height: 100vh;
+}
+div.app {
+    position: relative;
+    min-height: 100vh;
 }
 
 a {
@@ -17,6 +28,8 @@ button {
 }
 
 .moss-shop-wrapper {
+    position: relative;
+    min-height: 100%;
 }
 
 .black-theme {
