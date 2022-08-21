@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
 	return (
-	<div class='footer'>Footer</div>
+	<div class='footer'>Mox'Pro - Живые растения без воды @ 2022</div>
            )
 };
 

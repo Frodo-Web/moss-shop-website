@@ -4,10 +4,11 @@
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+    background-color: #6bda83;
     text-align: center;
     font-size: 18px;
     transition: var(--theme-transition);
+    z-index: 2;
   }
   .black-theme .footer {
     background-color: #222222;
