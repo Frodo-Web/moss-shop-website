@@ -94,6 +94,7 @@
     border: 1px solid var(--theme-color);
     border-radius: 15px;
     transition: background-color 0.2s linear;
+    cursor: pointer;
 }
 .black-theme .nav > button {
     background-color: rgb(187, 186, 186);
