@@ -9,16 +9,7 @@ body {
     position: relative;
     min-height: 100%;
 }
-body::after{
-    /* hide images */
-    position: absolute;
-    width:0; 
-    height:0; 
-    overflow:hidden; 
-    z-index:-1; 
-    /* load images */
-    content:url(./pages/images/1.jpg) url(./pages/images/2.jpg) url(./pages/images/3.jpg) url(./pages/images/4.jpg) url(./pages/images/5.jpg); 
- }
+
 
 div#root {
     position: relative;
@@ -28,6 +19,16 @@ div.app {
     position: relative;
     min-height: 100vh;
 }
+div.app::after{
+    /* hide images */
+    position: absolute;
+    width:0; 
+    height:0; 
+    overflow:hidden; 
+    z-index:-1; 
+    /* load images */
+    content:url(./pages/images/1.jpg) url(./pages/images/2.jpg) url(./pages/images/3.jpg) url(./pages/images/4.jpg) url(./pages/images/5.jpg); 
+ }
 
 a {
 
