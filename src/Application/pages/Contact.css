@@ -20,6 +20,16 @@
     transition: transform .4s ease-in-out;
     transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out
 }
+@media (max-width:370px) {
+    .contact .container { 
+        height: calc(100vh - 80px);
+    }
+}
+@media (max-height:450px) {
+    .contact .container { 
+        height: calc(100vh - 80px);
+    }
+}
 .container__curtain {
     z-index: 20;
     position: absolute;

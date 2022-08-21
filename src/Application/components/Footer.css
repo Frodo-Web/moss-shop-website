@@ -1,3 +1,13 @@
+@media (max-width:370px) {
+    .footer {
+        display: none;
+    }
+}
+@media (max-height:450px) {
+    .footer {
+        display: none;
+    }
+}
 .footer {
     position: absolute;
     right: 0;
