@@ -17,15 +17,15 @@ const Layout = () => {
     return (
         <>
             <input type="checkbox" id="nav-check" />
-            <div class="nav-header">
+            <div className="nav-header">
                 <img src='./images/moss.png'></img>
                 <div className='about'>
                     <div className="nav-title">Mox'Pro</div>
                     <div className='description'>Живые растения без воды</div>
                 </div>
             </div>
-            <div class="nav-btn">
-                <label for="nav-check">
+            <div className="nav-btn">
+                <label htmlFor="nav-check">
                     <span></span>
                     <span></span>
                     <span></span>

@@ -14,15 +14,15 @@ export default Contact;
 const Slider = () => {
 
 	return (
-		<div class="container">
-			<div class="container__covers">
-				<div class="container__cover"></div>
-				<div class="container__cover"></div>
-				<div class="container__cover"></div>
-				<div class="container__cover"></div>
-				<div class="container__cover"></div>
+		<div className="container">
+			<div className="container__covers">
+				<div className="container__cover"></div>
+				<div className="container__cover"></div>
+				<div className="container__cover"></div>
+				<div className="container__cover"></div>
+				<div className="container__cover"></div>
 			</div>
-			<div class="container__curtain"></div>
+			<div className="container__curtain"></div>
 		</div>
 	)
 }
