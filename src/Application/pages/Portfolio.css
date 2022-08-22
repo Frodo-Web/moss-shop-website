@@ -35,6 +35,9 @@
 	text-align: center;
 	position: relative;
     background-color: var(--theme-background);
+    background-repeat: no-repeat;
+    background-size: var(--bg-size);
+    background-position: var(--bg-position);
 }
 h1	{
 	position: absolute;
@@ -52,34 +55,18 @@ h1	{
 }
 .portfolio section:nth-child(1) {
     background-image: url(./images/portfolio/section1-1.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 .portfolio section:nth-child(2) {
     background-image: url(./images/portfolio/section1-2.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
-
 }
 .portfolio section:nth-child(3) {
     background-image: url(./images/portfolio/section1-3.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 .portfolio section:nth-child(4) {
     background-image: url(./images/portfolio/section1-4.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 .portfolio section:nth-child(5) {
     background-image: url(./images/portfolio/section2-1.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 @media (max-width:1000px){
     .portfolio section:nth-child(5) {
@@ -88,9 +75,6 @@ h1	{
 }
 .portfolio section:nth-child(6) {
     background-image: url(./images/portfolio/section3-1-wide.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 } 
 @media (max-width:700px){
     .portfolio section:nth-child(6) {
@@ -99,9 +83,6 @@ h1	{
 }
 .portfolio section:nth-child(7) {
     background-image: url(./images/portfolio/section4-1-wide.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 } 
 @media (max-width:950px){
     .portfolio section:nth-child(7) {
@@ -110,15 +91,9 @@ h1	{
 }
 .portfolio section:nth-child(8) {
     background-image: url(./images/portfolio/section5-1.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 .portfolio section:nth-child(9) {
     background-image: url(./images/portfolio/section5-2-wide.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
 }
 @media (max-width:1100px){
     .portfolio section:nth-child(9) {

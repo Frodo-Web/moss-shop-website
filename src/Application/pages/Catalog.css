@@ -1,0 +1,96 @@
+.catalog {
+    --name-font-size: 22px;
+    --price-font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+.black-theme .catalog {
+    background-color: rgb(44, 44, 44);
+}
+@media (max-width:800px){
+    .catalog {
+        width: 100%;
+    }
+}
+.catalog .grid {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.catalog .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+     width: 240px;
+     /* height: 350px; */
+    cursor: pointer;
+    background-color: rgb(216, 235, 252);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.1s linear;
+}
+.catalog .card:hover {
+    transform: scale(1.1);
+}
+.black-theme .catalog .card {
+    background-color: rgb(73, 73, 73);
+}
+
+.catalog .card > div:nth-child(1) {
+    /* height: 100px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.catalog .card > div:nth-child(2) {
+    font-size: var(--name-font-size);
+    text-align: center;
+}
+.catalog .card > div:nth-child(3) {
+    font-size: var(--price-font-size);
+    text-align: center;
+}
+.black-theme .catalog .card > div:nth-child(2) {
+    text-shadow: 0 0 5px black;
+}
+.black-theme .catalog .card > div:nth-child(3) {
+    text-shadow: 0 0 5px black;
+}
+.catalog .card:nth-child(1) > div:nth-child(1) {
+    background-image: url(./images/catalog/moss-graphite-frame-preview.jpg);
+}
+.catalog .card:nth-child(2) > div:nth-child(1) {
+    background-image: url(./images/catalog/moss-kashpo-preview.jpg);
+}
+.catalog .card:nth-child(3) > div:nth-child(1) {
+    background-image: url(./images/catalog/moss-white-frame-preview.jpg);
+}
+.catalog .card:nth-child(4) > div:nth-child(1) {
+    background-image: url(./images/catalog/moss-yagel-preview.jpg);
+}
+.catalog .card:nth-child(5) > div:nth-child(1) {
+    background-image: url(./images/catalog/moss-composition-preview.jpg);
+}
+.catalog .card:nth-child(6) > div:nth-child(1) {
+    background-image: url(./images/catalog/black-square-with-moss-preview.jpg);
+}
+.catalog .card:nth-child(7) > div:nth-child(1) {
+    background-image: url(./images/catalog/panno-family-preview.jpg);
+}
+.catalog .card:nth-child(8) > div:nth-child(1) {
+    background-image: url(./images/catalog/fern-preview.jpg);
+}
+.catalog .card:nth-child(9) > div:nth-child(1) {
+    background-image: url(./images/catalog/eucalyptus-baby-preview.jpg);
+}
