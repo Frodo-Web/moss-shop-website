@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    height: calc(100vh - 80px - 25px);
+    height: calc(100vh - 80px);
 }
 .contact .info {
     z-index: 2100;
@@ -59,14 +59,14 @@
     top: 0;
     left: 0;
     right: 0;
-    height: calc(100vh - 80px - 25px);
+    height: calc(100vh - 80px);
     -webkit-transition: -webkit-transform .4s ease-in-out;
     transition: -webkit-transform .4s ease-in-out;
     -o-transition: transform .4s ease-in-out;
     transition: transform .4s ease-in-out;
     transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out
 }
-@media (max-width:370px), (max-height:450px), (pointer:none), (pointer:coarse) {
+@media (max-width:370px), (max-height:450px), (pointer:none), (pointer:coarse), (hover:none) {
     .contact .container { 
         height: calc(100vh - 80px);
     }
@@ -175,7 +175,7 @@
 }
 
 .container__cover:nth-child(2) {
-    background-image: url(./images/2.jpg);
+    background-image: url(./images/section1-3.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-1 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-1 30s infinite, bg-zoomin 6s forwards ease-in infinite
@@ -189,7 +189,7 @@
 }
 
 .container__cover:nth-child(4) {
-    background-image: url(./images/4.jpg);
+    background-image: url(./images/section2-1.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-3 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-3 30s infinite, bg-zoomin 6s forwards ease-in infinite

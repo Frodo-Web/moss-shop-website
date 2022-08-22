@@ -27,7 +27,7 @@ div.app::after{
     overflow:hidden; 
     z-index:-1; 
     /* load images */
-    content:url(./pages/images/1.jpg) url(./pages/images/2.jpg) url(./pages/images/3.jpg) url(./pages/images/4.jpg) url(./pages/images/5.jpg); 
+    content:url(./pages/images/1.jpg) url(./pages/images/section1-3.jpg) url(./pages/images/3.jpg) url(./pages/images/section2-1.jpg) url(./pages/images/5.jpg); 
  }
 
 a {

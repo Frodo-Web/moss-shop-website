@@ -1,4 +1,6 @@
 .header {
     position: relative;
+    --nav-height: 80px;
+    height: var(--nav-height);
     z-index: 3;
 }

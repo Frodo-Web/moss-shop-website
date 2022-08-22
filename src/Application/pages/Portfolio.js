@@ -3,8 +3,44 @@ import './Portfolio.css';
 
 const Portfolio = () => {
 	return (
-	<h2>Portfolio</h2>
-           )
+		<div className='portfolio'>
+			<ScrollHit />
+			<Examples />
+		</div>
+	)
 };
 
 export default Portfolio;
+
+const Examples = () => {
+
+	return (
+		<div>	
+			<section>
+				<h1>Озеленение стен</h1>
+			</section>
+			<section>
+				<h1>Озеленение стен</h1>
+			</section>
+			<section>
+				<h1>Озеленение стен</h1>
+			</section>
+			<section>
+				<h1>Озеленение стен</h1>
+			</section>
+			<section>
+				<h1>Панно Семья</h1>
+			</section>
+			<section>
+				<h1>Стол переговоров</h1>
+			</section>
+		</div>
+	)
+}
+
+const ScrollHit = () => {
+
+	return (
+		<div className='scroll'></div>
+	)
+}
