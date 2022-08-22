@@ -20,7 +20,7 @@
     z-index: 5;
     bottom: 5%;
     right: 20px;
-    background-image: url(./images/scroll-up-down.png);
+    background-image: url(./images/portfolio/scroll-up-down.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: calc(4rem + 6vw);
@@ -51,49 +51,77 @@ h1	{
     border-radius: 15px;
 }
 .portfolio section:nth-child(1) {
-    background-image: url(./images/section1-1.jpg);
+    background-image: url(./images/portfolio/section1-1.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 }
 .portfolio section:nth-child(2) {
-    background-image: url(./images/section1-2.jpg);
+    background-image: url(./images/portfolio/section1-2.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 
 }
 .portfolio section:nth-child(3) {
-    background-image: url(./images/section1-3.jpg);
+    background-image: url(./images/portfolio/section1-3.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 }
 .portfolio section:nth-child(4) {
-    background-image: url(./images/section1-4.jpg);
+    background-image: url(./images/portfolio/section1-4.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 }
 .portfolio section:nth-child(5) {
-    background-image: url(./images/section2-1.jpg);
+    background-image: url(./images/portfolio/section2-1.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 }
 @media (max-width:1000px){
     .portfolio section:nth-child(5) {
-        background-image: url(./images/section2-1-touch.jpg);
+        background-image: url(./images/portfolio/section2-1-touch.jpg);
     }
 }
 .portfolio section:nth-child(6) {
-    background-image: url(./images/section3-1-wide.jpg);
+    background-image: url(./images/portfolio/section3-1-wide.jpg);
     background-repeat: no-repeat;
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 } 
 @media (max-width:700px){
     .portfolio section:nth-child(6) {
-        background-image: url(./images/section3-1-touch.jpg);
+        background-image: url(./images/portfolio/section3-1-touch.jpg);
+    }
+}
+.portfolio section:nth-child(7) {
+    background-image: url(./images/portfolio/section4-1-wide.jpg);
+    background-repeat: no-repeat;
+    background-size: var(--bg-size);
+    background-position: var(--bg-position);
+} 
+@media (max-width:950px){
+    .portfolio section:nth-child(7) {
+        background-image: url(./images/portfolio/section4-1-touch.jpg);
+    }
+}
+.portfolio section:nth-child(8) {
+    background-image: url(./images/portfolio/section5-1.jpg);
+    background-repeat: no-repeat;
+    background-size: var(--bg-size);
+    background-position: var(--bg-position);
+}
+.portfolio section:nth-child(9) {
+    background-image: url(./images/portfolio/section5-2-wide.jpg);
+    background-repeat: no-repeat;
+    background-size: var(--bg-size);
+    background-position: var(--bg-position);
+}
+@media (max-width:1100px){
+    .portfolio section:nth-child(9) {
+        background-image: url(./images/portfolio/section5-2-touch.jpg);
     }
 }

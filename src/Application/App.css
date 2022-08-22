@@ -27,7 +27,7 @@ div.app::after{
     overflow:hidden; 
     z-index:-1; 
     /* load images */
-    content:url(./pages/images/1.jpg) url(./pages/images/section1-3.jpg) url(./pages/images/3.jpg) url(./pages/images/section2-1.jpg) url(./pages/images/5.jpg); 
+    content:url(./pages/images/contact/3.jpg)  url(./pages/images/contact/5.jpg) url(./pages/images/portfolio/section1-1.jpg) url(./pages/images/portfolio/section1-2.jpg) url(./pages/images/portfolio/section1-3.jpg) url(./pages/images/portfolio/section2-1.jpg) url(./pages/images/portfolio/section4-1-touch.jpg); 
  }
 
 a {

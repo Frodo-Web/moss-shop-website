@@ -22,8 +22,13 @@ const Examples = () => {
 			<section></section>
 
 			<section><h1>Панно Семья</h1></section>
-			
+
 			<section><h1>Стол переговоров</h1></section>
+
+			<section><h1>Корзины с мхом</h1></section>
+
+			<section><h1>Озеленение помещений</h1></section>
+			<section></section>
 		</div>
 	)
 }

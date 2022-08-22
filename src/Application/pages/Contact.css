@@ -168,35 +168,35 @@
 }
 
 .container__cover:nth-child(1) {
-    background-image: url(./images/1.jpg);
+    background-image: url(./images/portfolio/section4-1-touch.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-0 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-0 30s infinite, bg-zoomin 6s forwards ease-in infinite
 }
 
 .container__cover:nth-child(2) {
-    background-image: url(./images/section1-3.jpg);
+    background-image: url(./images/portfolio/section1-3.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-1 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-1 30s infinite, bg-zoomin 6s forwards ease-in infinite
 }
 
 .container__cover:nth-child(3) {
-    background-image: url(./images/3.jpg);
+    background-image: url(./images/contact/3.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-2 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-2 30s infinite, bg-zoomin 6s forwards ease-in infinite
 }
 
 .container__cover:nth-child(4) {
-    background-image: url(./images/section2-1.jpg);
+    background-image: url(./images/portfolio/section2-1.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-3 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-3 30s infinite, bg-zoomin 6s forwards ease-in infinite
 }
 
 .container__cover:nth-child(5) {
-    background-image: url(./images/5.jpg);
+    background-image: url(./images/contact/5.jpg);
     background-size: var(--bg-size);
     -webkit-animation: bg-opacity-4 30s infinite, bg-zoomin 6s forwards ease-in infinite;
     animation: bg-opacity-4 30s infinite, bg-zoomin 6s forwards ease-in infinite
