@@ -626,7 +626,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"6eae29eb3013133e3d67.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/black-square-with-moss-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/black-square-with-moss-preview6eae29eb3013133e3d67.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/black-square-with-moss-preview.jpg?");
 
 /***/ }),
 
@@ -636,7 +636,7 @@ eval("module.exports = __webpack_require__.p + \"6eae29eb3013133e3d67.jpg\";\n\n
   \**************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"7bbb4d9993f79382c4e8.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/eucalyptus-baby-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/eucalyptus-baby-preview7bbb4d9993f79382c4e8.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/eucalyptus-baby-preview.jpg?");
 
 /***/ }),
 
@@ -646,7 +646,7 @@ eval("module.exports = __webpack_require__.p + \"7bbb4d9993f79382c4e8.jpg\";\n\n
   \********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"c60d68c99a10957292ad.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/eucalyptus-stabilized-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/eucalyptus-stabilized-previewc60d68c99a10957292ad.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/eucalyptus-stabilized-preview.jpg?");
 
 /***/ }),
 
@@ -656,7 +656,7 @@ eval("module.exports = __webpack_require__.p + \"c60d68c99a10957292ad.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"f3662ae5cff7001169c0.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/fern-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/fern-previewf3662ae5cff7001169c0.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/fern-preview.jpg?");
 
 /***/ }),
 
@@ -666,7 +666,7 @@ eval("module.exports = __webpack_require__.p + \"f3662ae5cff7001169c0.jpg\";\n\n
   \***************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"9f583dafea1c884c1fd7.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-composition-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-composition-preview9f583dafea1c884c1fd7.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-composition-preview.jpg?");
 
 /***/ }),
 
@@ -676,7 +676,7 @@ eval("module.exports = __webpack_require__.p + \"9f583dafea1c884c1fd7.jpg\";\n\n
   \******************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"2ed06ec85b116ef3f746.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-graphite-frame-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-graphite-frame-preview2ed06ec85b116ef3f746.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-graphite-frame-preview.jpg?");
 
 /***/ }),
 
@@ -686,7 +686,7 @@ eval("module.exports = __webpack_require__.p + \"2ed06ec85b116ef3f746.jpg\";\n\n
   \**********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"4c74a172d5f986d4019e.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-kashpo-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-kashpo-preview4c74a172d5f986d4019e.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-kashpo-preview.jpg?");
 
 /***/ }),
 
@@ -696,7 +696,7 @@ eval("module.exports = __webpack_require__.p + \"4c74a172d5f986d4019e.jpg\";\n\n
   \*************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"4d8c8afc1a19bd800f47.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-plastovyy-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-plastovyy-preview4d8c8afc1a19bd800f47.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-plastovyy-preview.jpg?");
 
 /***/ }),
 
@@ -706,7 +706,7 @@ eval("module.exports = __webpack_require__.p + \"4d8c8afc1a19bd800f47.jpg\";\n\n
   \***************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"1fdd1ca1b5fe56557bea.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-white-frame-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-white-frame-preview1fdd1ca1b5fe56557bea.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-white-frame-preview.jpg?");
 
 /***/ }),
 
@@ -716,7 +716,7 @@ eval("module.exports = __webpack_require__.p + \"1fdd1ca1b5fe56557bea.jpg\";\n\n
   \*********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"10e7a7d373d14b145132.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-yagel-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/moss-yagel-preview10e7a7d373d14b145132.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/moss-yagel-preview.jpg?");
 
 /***/ }),
 
@@ -726,7 +726,7 @@ eval("module.exports = __webpack_require__.p + \"10e7a7d373d14b145132.jpg\";\n\n
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"8eaee82ac39e4b71d0fe.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/panno-family-preview.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/panno-family-preview8eaee82ac39e4b71d0fe.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/catalog/panno-family-preview.jpg?");
 
 /***/ }),
 
@@ -736,7 +736,7 @@ eval("module.exports = __webpack_require__.p + \"8eaee82ac39e4b71d0fe.jpg\";\n\n
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"9320d6325b6ebf5abd66.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/contact/3.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/39320d6325b6ebf5abd66.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/contact/3.jpg?");
 
 /***/ }),
 
@@ -746,7 +746,7 @@ eval("module.exports = __webpack_require__.p + \"9320d6325b6ebf5abd66.jpg\";\n\n
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"f060e75a7d9ac9941b96.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/contact/5.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/5f060e75a7d9ac9941b96.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/contact/5.jpg?");
 
 /***/ }),
 
@@ -756,7 +756,7 @@ eval("module.exports = __webpack_require__.p + \"f060e75a7d9ac9941b96.jpg\";\n\n
   \*******************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"6dfbafb6a6f387542c79.png\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/scroll-up-down.png?");
+eval("module.exports = __webpack_require__.p + \"images/css/scroll-up-down6dfbafb6a6f387542c79.png\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/scroll-up-down.png?");
 
 /***/ }),
 
@@ -766,7 +766,7 @@ eval("module.exports = __webpack_require__.p + \"6dfbafb6a6f387542c79.png\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e005b62a947480c346da.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-1.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section1-1e005b62a947480c346da.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-1.jpg?");
 
 /***/ }),
 
@@ -776,7 +776,7 @@ eval("module.exports = __webpack_require__.p + \"e005b62a947480c346da.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"23795e093a82c110458f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-2.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section1-223795e093a82c110458f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-2.jpg?");
 
 /***/ }),
 
@@ -786,7 +786,7 @@ eval("module.exports = __webpack_require__.p + \"23795e093a82c110458f.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e14aff3439e5d23f4174.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-3.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section1-3e14aff3439e5d23f4174.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-3.jpg?");
 
 /***/ }),
 
@@ -796,7 +796,7 @@ eval("module.exports = __webpack_require__.p + \"e14aff3439e5d23f4174.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"a6412964da081434966d.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-4.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section1-4a6412964da081434966d.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section1-4.jpg?");
 
 /***/ }),
 
@@ -806,7 +806,7 @@ eval("module.exports = __webpack_require__.p + \"a6412964da081434966d.jpg\";\n\n
   \*********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"c94fbfc9b942a21c8a32.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section2-1-touch.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section2-1-touchc94fbfc9b942a21c8a32.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section2-1-touch.jpg?");
 
 /***/ }),
 
@@ -816,7 +816,7 @@ eval("module.exports = __webpack_require__.p + \"c94fbfc9b942a21c8a32.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"f697594bf9457729d12f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section2-1.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section2-1f697594bf9457729d12f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section2-1.jpg?");
 
 /***/ }),
 
@@ -826,7 +826,7 @@ eval("module.exports = __webpack_require__.p + \"f697594bf9457729d12f.jpg\";\n\n
   \*********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"fbf1fe12ad13d352b25d.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section3-1-touch.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section3-1-touchfbf1fe12ad13d352b25d.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section3-1-touch.jpg?");
 
 /***/ }),
 
@@ -836,7 +836,7 @@ eval("module.exports = __webpack_require__.p + \"fbf1fe12ad13d352b25d.jpg\";\n\n
   \********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"d33cc1eff60f61b8bcbf.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section3-1-wide.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section3-1-wided33cc1eff60f61b8bcbf.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section3-1-wide.jpg?");
 
 /***/ }),
 
@@ -846,7 +846,7 @@ eval("module.exports = __webpack_require__.p + \"d33cc1eff60f61b8bcbf.jpg\";\n\n
   \*********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dd56ea7f99f4fd38dfa8.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section4-1-touch.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section4-1-touchdd56ea7f99f4fd38dfa8.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section4-1-touch.jpg?");
 
 /***/ }),
 
@@ -856,7 +856,7 @@ eval("module.exports = __webpack_require__.p + \"dd56ea7f99f4fd38dfa8.jpg\";\n\n
   \********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"f8b660894bd5b519f35f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section4-1-wide.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section4-1-widef8b660894bd5b519f35f.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section4-1-wide.jpg?");
 
 /***/ }),
 
@@ -866,7 +866,7 @@ eval("module.exports = __webpack_require__.p + \"f8b660894bd5b519f35f.jpg\";\n\n
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"a2474fc91a8c6f2a9826.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-1.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section5-1a2474fc91a8c6f2a9826.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-1.jpg?");
 
 /***/ }),
 
@@ -876,7 +876,7 @@ eval("module.exports = __webpack_require__.p + \"a2474fc91a8c6f2a9826.jpg\";\n\n
   \*********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"fb34f0254f4725e88b7b.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-2-touch.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section5-2-touchfb34f0254f4725e88b7b.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-2-touch.jpg?");
 
 /***/ }),
 
@@ -886,7 +886,7 @@ eval("module.exports = __webpack_require__.p + \"fb34f0254f4725e88b7b.jpg\";\n\n
   \********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e873e8172ba7c5662a40.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-2-wide.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/css/section5-2-widee873e8172ba7c5662a40.jpg\";\n\n//# sourceURL=webpack://moss-shop-website/./src/Application/pages/images/portfolio/section5-2-wide.jpg?");
 
 /***/ }),
 

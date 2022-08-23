@@ -5,6 +5,7 @@ module.exports={
 	entry: "./src/index.js", 
 	output: {
 		path: path.resolve(__dirname, "docs"),
+		assetModuleFilename: 'images/css/[name][hash][ext][query]',
 		filename: "main.js"
 	},
 	target: "web",
@@ -22,6 +23,7 @@ module.exports={
 		rules: [
 			{
 				test: /\.css$/,
+				exclude: path.resolve(__dirname, 'node_modules'),
 				use: ['style-loader', 'css-loader'],
 			},
 			{
