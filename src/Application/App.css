@@ -3,13 +3,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    color: black;
+    --theme-color: black;
+    --theme-background: #6bda83;
     --theme-transition: color 0.5s linear, background-color 0.5s linear;
     transition: var(--theme-transition);
     position: relative;
     min-height: 100%;
 }
 
+body.black-theme  {
+    --theme-color: white;
+    --theme-background: rgb(34, 34, 34);
+}
 
 div#root {
     position: relative;

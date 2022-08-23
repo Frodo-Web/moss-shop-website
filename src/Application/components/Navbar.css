@@ -2,9 +2,7 @@
     height: var(--nav-height); 
     width: 100%;
     position: fixed;
-    --theme-background: #6bda83;
     --theme-links-background: rgba(230, 228, 228, 0.781);
-    --theme-color: black;
     --theme-hover: rgba(0, 0, 0, 0.3);
     --column-gap: 20px;
     --row-gap: 10px;
@@ -22,9 +20,8 @@
     transition: var(--theme-transition);
 }
 .black-theme .nav {
-    --theme-background: rgb(34, 34, 34);
     --theme-links-background: rgba(34, 34, 34, 0.781);
-    --theme-color: white;
+    
     --theme-hover: rgba(255, 255, 255, 0.3);
 }
 .nav>.nav-header {

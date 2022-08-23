@@ -45,10 +45,10 @@ const Links = () => {
     return (
         <>
             <nav className='nav-links'>
-                <NavLink onClick={handleLinkClick} to='/'>О компании</NavLink>
-                <NavLink onClick={handleLinkClick} to='/catalog'>Каталог</NavLink>
+                <NavLink onClick={handleLinkClick} to='/'>Введение</NavLink>
+                <NavLink onClick={handleLinkClick} to='/catalog'>Продукты</NavLink>
+                <NavLink onClick={handleLinkClick} to='/service'>Сервис</NavLink>
                 <NavLink onClick={handleLinkClick} to='/portfolio'>Примеры работ</NavLink>
-                <NavLink onClick={handleLinkClick} to='/special-deals'>Акции</NavLink>
                 <NavLink onClick={handleLinkClick} to='/contact'>Контакты</NavLink>
             </nav>
         </>

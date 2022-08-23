@@ -1,0 +1,117 @@
+.home {
+    --text-bg: rgb(212, 232, 250);
+}
+.home .bgimg {
+    position: relative;
+    opacity: 0.9; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: var(--theme-transition);
+    min-height: calc(100vh - 80px);
+  }
+/* .home .paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--theme-transition);
+    background-color: var(--text-bg);
+    color: var(--theme-color);
+    min-height: 600px;
+}
+.black-theme .home .paragraph {
+    background-color: var(--theme-background);
+}
+.home .paragraph .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    background-color:rgb(144, 199, 253);
+    transition: var(--theme-transition);
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.home .paragraph .message > div {
+    font-size: calc(1.4rem + 1.1vh);
+    text-align: center;
+}
+.home .paragraph .message > p {
+    font-size: calc(1.2rem + 0.8vh);
+    text-align: center;
+}
+.black-theme .paragraph .message {
+    background-color: rgb(68, 68, 68);
+    text-shadow: 0 0 5px black;
+}
+@media (max-width:540px){
+    .home .paragraph .message {
+        width: 100%;
+    }
+    .home .paragraph .message > div {
+        font-size: 1.2rem;
+    }
+    .home .paragraph .message > p {
+        font-size: 1rem;
+    }
+} */
+.home .caption {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /* background-color: var(--text-bg); */
+    background-color: rgba(0, 0, 0, 0.301);
+    /* color: var(--theme-color); */
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding: 18px;
+    font-size: calc(1.2rem + 0.8vh);
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: var(--theme-transition);
+    text-align: center;
+}
+@media (max-width:540px){
+    .home .caption {
+        width: 100%;
+    }
+
+}
+@media (max-width:305px){
+    .home .caption {
+        font-size: 1rem;
+    }
+}
+.home .caption > span.underline {
+    border-bottom: 2px solid red;
+    padding: 2px;
+}
+.black-theme .home .caption {
+    /* background-color: rgb(104, 103, 103); */
+    /* background-color: transparent;
+    text-shadow: 0 0 5px black; */
+  }
+.home .wrapper > div:nth-child(1) {
+    background-image: url(./images/contact/3.jpg);
+  }
+.home .wrapper > div:nth-child(2)  {
+    background-image: url(./images/portfolio/section4-1-touch.jpg);
+  }
+.home .wrapper > div:nth-child(3)  {
+    background-image: url(./images/color-horizontal-cropped.jpg);
+  }
+@media (max-width:900px) {
+    .home .wrapper > div:nth-child(3)  {
+        background-image: url(./images/color-vertical-cropped.jpg);
+      }
+}
+.home .wrapper > div:nth-child(4) {
+    background-image: url(./images/contact/3.jpg);
+  }
