@@ -129,3 +129,6 @@
             transform: translateY(-100%);
             transition: all .6s 1.5s ease-out;
         }
+        .loaded .loader {
+            pointer-events: none;
+        }

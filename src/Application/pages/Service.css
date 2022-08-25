@@ -1,0 +1,83 @@
+.service {
+    --name-font-size: 22px;
+    --price-font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    transition: var(--theme-transition);
+}
+.black-theme .service {
+    background-color: rgb(44, 44, 44);
+}
+@media (max-width:800px){
+    .service {
+        width: 100%;
+    }
+}
+.service .grid {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* @media (max-width:569px){
+    .service .grid {
+        max-height: calc(100vh - 80px);
+        overflow-y: scroll;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(3rem);
+        scroll-snap-type: y mandatory;
+    }
+    .service .card {
+        scroll-snap-align: start;
+        scroll-margin: 30px 0 0 30px;
+    }
+} */
+
+.service .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #d6e9fa;
+    width: 250px;
+    padding: 10px;
+    transition: transform 0.1s linear, var(--theme-transition);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.service .card:hover {
+    transform: scale(1.1);
+}
+.black-theme .service .card {
+    background-color: rgb(73, 73, 73);
+}
+.service .card > div:nth-child(1) {
+    height: 400px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.service .card > div:nth-child(2) {
+    font-size: var(--name-font-size);
+    padding-top: 15px;
+    text-align: center;
+}
+.service .card > div:nth-child(4) {
+    font-size: var(--price-font-size);
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid grey;
+    padding: 5px 15px;
+}
+.service .card:nth-child(1) > div:nth-child(1) {
+    height: 354px;;
+    background-image: url(./images/service/ozelenenie-pomesheniy.jpg);
+}
+.service .card:nth-child(2) > div:nth-child(1) {
+    height: 200px;
+    background-image: url(./images/service/fito-design.jpg);
+}
