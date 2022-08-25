@@ -81,6 +81,7 @@
 @media (max-width:540px){
     .home .caption {
         width: 100%;
+        background-color: transparent;
     }
 
 }
