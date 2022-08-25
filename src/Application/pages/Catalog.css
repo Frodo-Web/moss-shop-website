@@ -43,7 +43,7 @@
     gap: 15px;
      width: 240px;
      /* height: 350px; */
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: rgb(216, 235, 252);
     padding: 20px;
     border-radius: 20px;
@@ -56,7 +56,46 @@
 .black-theme .catalog .card {
     background-color: rgb(73, 73, 73);
 }
-
+.card button {
+    position: relative;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    /* background-color: var(--theme-background); */
+    background-color: transparent;
+    color: var(--theme-color);
+    font-size: 18px;
+    padding: 10px;
+    transition: var(--theme-transition);
+    border-radius: 10px;
+    border-color: var(--theme-background);
+}
+.black-theme .card button {
+    border-color:gainsboro
+}
+.card button::after {
+    content: "";
+    background: var(--theme-background);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.black-theme .card button::after {
+    background: black;
+}
+.card button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
 .catalog .card > div:nth-child(1) {
     /* height: 100px; */
     background-repeat: no-repeat;
@@ -71,16 +110,29 @@
     font-size: var(--name-font-size);
     text-align: center;
 }
-.catalog .card > div:nth-child(3) {
+.catalog .card > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
     font-size: var(--price-font-size);
     text-align: center;
+}
+.catalog .card > div:nth-child(4) div.line-through {
+    text-decoration: line-through;
+    color: grey;
+    font-size: calc(var(--price-font-size) - 3px);
+    transition: var(--theme-transition);
+}
+.black-theme .catalog .card > div:nth-child(4) div.line-through {
+    color: rgb(182, 182, 182);
 }
 .black-theme .catalog .card > div:nth-child(2) {
     text-shadow: 0 0 5px black;
 }
-.black-theme .catalog .card > div:nth-child(3) {
+.black-theme .catalog .card > div:nth-child(4) {
     text-shadow: 0 0 5px black;
 }
+
 .catalog .card:nth-child(1) > div:nth-child(1) {
     background-image: url(./images/catalog/moss-graphite-frame-preview.jpg);
 }

@@ -27,56 +27,67 @@ const Cards = () => {
 			<div className='card'>
 				<div></div>
 				<div>Мох в сотах</div>
-				<div>1,300 ₽</div>
+				<button>Добавить в корзину</button>
+				<div>1,300 ₽ <div className='line-through'>1,600 ₽</div></div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Мох в Кашпо</div>
+				<button>Добавить в корзину</button>
 				<div>1,000 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Соты с мхом</div>
-				<div>1,300 ₽</div>
+				<button>Добавить в корзину</button>
+				<div>1,300 ₽ <div className='line-through'>1,600 ₽</div></div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Мох стабилизированный, Ягель</div>
-				<div>2,000 ₽</div>
+				<button>Добавить в корзину</button>
+				<div>2,000 ₽ <div className='line-through'>3,000 ₽</div></div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Композиция из мха</div>
+				<button>Добавить в корзину</button>
 				<div>3,000 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Чёрный квадрат с мхом</div>
+				<button>Добавить в корзину</button>
 				<div>1,300 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Панно Семья</div>
+				<button>Добавить в корзину</button>
 				<div>8,000 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Папоротник</div>
-				<div>130 ₽</div>
+				<button>Добавить в корзину</button>
+				<div>130 ₽ <div className='line-through'>200 ₽</div></div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Эвкалипт бэби, стабилизированный</div>
+				<button>Добавить в корзину</button>
 				<div>450 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Эвкалипт стабилизированный</div>
+				<button>Добавить в корзину</button>
 				<div>300 ₽</div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Мох пластовый, стабилизированный</div>
+				<button>Добавить в корзину</button>
 				<div>300 ₽</div>
 			</div>
 
