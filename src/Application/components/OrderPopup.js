@@ -41,7 +41,7 @@ const Form = ({ image, name, description, price }) => {
                 <div>{price}</div>
                 <form className='inputs'>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
-                    <input id='tel' placeholder='+7 (905) 223-23-27' required/>
+                    <input id='tel' placeholder='+7 (905) 223-23-28' required/>
                     <div></div>
                     <button onClick={handleClick} type="submit">Заказать</button>
                 </form>
