@@ -25,6 +25,9 @@ const OrderPopup = ({ order }) => {
 export default OrderPopup;
 
 const Form = ({ image, name, description, price }) => {
+    const handleClick = (event) => {
+        event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.'
+    }
     const style = {
         backgroundImage: image,
     };
@@ -36,11 +39,12 @@ const Form = ({ image, name, description, price }) => {
                 <div>{name}</div>
                 <div>{description}</div>
                 <div>{price}</div>
-                <div className='inputs'>
-                    <label htmlFor='tel'>Ваш номер: </label>
-                    <input id='tel' placeholder='+7 (905) 223-23-27' />
-                </div>
-                <button type="button">Заказать</button>
+                <form className='inputs'>
+                    <label htmlFor='tel'>Укажите ваш номер: </label>
+                    <input id='tel' placeholder='+7 (905) 223-23-27' required/>
+                    <div></div>
+                    <button onClick={handleClick} type="submit">Заказать</button>
+                </form>
             </div>
 
         </div>
