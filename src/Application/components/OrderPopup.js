@@ -8,11 +8,11 @@ const OrderPopup = ({ order }) => {
     const description = order.description;
     const price = order.price;
     const handleWrapperClick = (event) => {
-        if (event.target.parentNode.className !== "form" 
-        && event.target.className !== "form"
-        && event.target.parentNode.className !== "right-column"
-        && event.target.parentNode.className !== "left-column"
-        && event.target.parentNode.className !== "inputs") event.target.style.visibility = "hidden";
+        if (event.target.parentNode.className !== "form"
+            && event.target.className !== "form"
+            && event.target.parentNode.className !== "right-column"
+            && event.target.parentNode.className !== "left-column"
+            && event.target.parentNode.className !== "inputs") event.target.style.visibility = "hidden";
     }
 
     return (
@@ -41,7 +41,9 @@ const Form = ({ image, name, description, price }) => {
                 <div>{price}</div>
                 <form className='inputs'>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
-                    <input id='tel' placeholder='+7 (905) 223-23-28' required/>
+                    <input id='tel' placeholder='+7 (905) 223-23-28' required />
+                    <label htmlFor='wishes'>Ваши пожелания: </label>
+                    <textarea id='wishes'></textarea>
                     <div></div>
                     <button onClick={handleClick} type="submit">Заказать</button>
                 </form>

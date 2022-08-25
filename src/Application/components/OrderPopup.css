@@ -17,12 +17,12 @@
     left: 50%;
     transform: translate(-50%, -65%);
     display: flex;
-    padding: 30px;
     gap: 30px;
+    padding: 20px;
     background-color: #d6e9fae7;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 800px;
-    height: 600px;
+    height: max-content;
     overflow: auto;
     transition: var(--theme-transition);
 }
@@ -31,15 +31,16 @@
 }
 
 #order-popup-wrapper .form .left-column{
-    flex: 2;
+    flex: 3;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #order-popup-wrapper .form .right-column {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -61,17 +62,23 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    font-size: var(--big-fs);
+    font-size: var(--big-fs-s);
 }
 #order-popup-wrapper .form .right-column > .inputs > input {
-    font-size: var(--big-fs);
+    font-size: var(--big-fs-s);
+}
+#order-popup-wrapper .form .right-column > .inputs > textarea {
+    font-size: var(--big-fs-s);
+    resize: vertical;
+    height: 60px;
+    width: 100%;
 }
 #order-popup-wrapper .form .right-column > .inputs > div {
     text-align: center;
     font-size: var(--big-fs-s);
 }
 
-@media (max-width:845px), (max-height:750px) {
+@media (max-width:845px), (max-height:800px) {
     #order-popup-wrapper {
         --big-fs: 20px;
         --big-fs-s: 16px;
