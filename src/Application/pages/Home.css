@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: var(--theme-transition);
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh);
   }
 /* .home .paragraph {
     display: flex;
