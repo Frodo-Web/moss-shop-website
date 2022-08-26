@@ -42,8 +42,6 @@ const Grid = ({handleClick}) => {
 
 const Cards = ({handleClick}) => {
 	
-
-
 	return (
 		<>
 			<div className='card'>

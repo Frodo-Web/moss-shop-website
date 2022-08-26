@@ -123,11 +123,13 @@
     text-align: center;
 }
 .catalog .card > div:nth-child(4) div.line-through {
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: line-through;
     color: grey;
-    font-size: calc(var(--price-font-size) - 2px);
+    font-size: calc(var(--price-font-size) - 3px);
     transition: var(--theme-transition);
+}
+.catalog .card > div:nth-child(4) span.ruble {
+    font-family: Arial, Helvetica, sans-serif;
 }
 .black-theme .catalog .card > div:nth-child(4) div.line-through {
     color: rgb(182, 182, 182);
