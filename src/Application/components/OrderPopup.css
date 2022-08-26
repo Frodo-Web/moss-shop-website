@@ -78,7 +78,7 @@
     font-size: var(--big-fs-s);
 }
 
-@media (max-width:845px), (max-height:800px) {
+@media (max-width:845px), (max-height:680px) {
     #order-popup-wrapper {
         --big-fs: 20px;
         --big-fs-s: 16px;

@@ -1,7 +1,9 @@
 .catalog {
+    position: relative;
     --name-font-size: 22px;
     --price-font-size: 18px;
     width: 80%;
+    min-height: calc(100vh - 80px);
     margin: 0 auto;
     background-color: aliceblue;
     transition: var(--theme-transition);

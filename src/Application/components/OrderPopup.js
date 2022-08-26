@@ -8,12 +8,8 @@ const OrderPopup = ({ order }) => {
     const description = order.description;
     const price = order.price;
     const handleWrapperClick = (event) => {
-        if (event.target.parentNode.className !== "form"
-            && event.target.className !== "form"
-            && event.target.parentNode.className !== "right-column"
-            && event.target.parentNode.className !== "left-column"
-            && event.target.parentNode.className !== "inputs") event.target.style.visibility = "hidden";
-    }
+        if (event.target.id === 'order-popup-wrapper') event.target.style.visibility = "hidden";
+    };
 
     return (
         <div id='order-popup-wrapper' onClick={handleWrapperClick}>
