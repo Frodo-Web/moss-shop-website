@@ -48,13 +48,13 @@ const Cards = ({handleClick}) => {
 				<div></div>
 				<div>Озеленение помещений искусственными растениями</div>
 				<button data-description='Выполнение озеленения помещений искуственными растениями премиум качества! Любые формы оплаты! Визуализации проектов! Лучшие цены на рынке!' onClick={handleClick}>Подробнее</button>
-				<div>18,000 ₽</div>
+				<div>18,000 <span className='ruble'>₽</span></div>
 			</div>
 			<div className='card'>
 				<div></div>
 				<div>Фито дизайн интерьера</div>
 				<button data-description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!' onClick={handleClick}>Подробнее</button>
-				<div>10,000 ₽ за m²</div>
+				<div>10,000 <span className='ruble'>₽</span> за m²</div>
 			</div>
 		</>
 	)

@@ -75,6 +75,9 @@
     border-bottom: 1px solid grey;
     padding: 5px 15px;
 }
+.service .card > div:nth-child(4) span.ruble {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .service .card:nth-child(1) > div:nth-child(1) {
     height: 354px;;
     background-image: url(./images/service/ozelenenie-pomesheniy.jpg);
