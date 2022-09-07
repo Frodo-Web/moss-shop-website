@@ -59,44 +59,44 @@ h1	{
 .portfolio section:nth-child(2) {
     background-image: url(./images/portfolio/section1-2.jpg);
 }
-.portfolio section:nth-child(3) {
+/* .portfolio section:nth-child(3) {
     background-image: url(./images/portfolio/section1-3.jpg);
-}
-.portfolio section:nth-child(4) {
+} */
+.portfolio section:nth-child(3) {
     background-image: url(./images/portfolio/section1-4.jpg);
 }
-.portfolio section:nth-child(5) {
+.portfolio section:nth-child(4) {
     background-image: url(./images/portfolio/section2-1.jpg);
 }
 @media (max-width:1000px){
-    .portfolio section:nth-child(5) {
+    .portfolio section:nth-child(4) {
         background-image: url(./images/portfolio/section2-1-touch.jpg);
     }
 }
-.portfolio section:nth-child(6) {
+.portfolio section:nth-child(5) {
     background-image: url(./images/portfolio/section3-1-wide.jpg);
 } 
 @media (max-width:700px){
-    .portfolio section:nth-child(6) {
+    .portfolio section:nth-child(5) {
         background-image: url(./images/portfolio/section3-1-touch.jpg);
     }
 }
-.portfolio section:nth-child(7) {
+.portfolio section:nth-child(6) {
     background-image: url(./images/portfolio/section4-1-wide.jpg);
 } 
 @media (max-width:950px){
-    .portfolio section:nth-child(7) {
+    .portfolio section:nth-child(6) {
         background-image: url(./images/portfolio/section4-1-touch.jpg);
     }
 }
-.portfolio section:nth-child(8) {
+.portfolio section:nth-child(7) {
     background-image: url(./images/portfolio/section5-1.jpg);
 }
-.portfolio section:nth-child(9) {
+.portfolio section:nth-child(8) {
     background-image: url(./images/portfolio/section5-2-wide.jpg);
 }
 @media (max-width:1100px){
-    .portfolio section:nth-child(9) {
+    .portfolio section:nth-child(8) {
         background-image: url(./images/portfolio/section5-2-touch.jpg);
     }
 }

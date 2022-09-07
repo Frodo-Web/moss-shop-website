@@ -18,7 +18,7 @@ const Examples = () => {
 		<div>	
 			<section><h1>Озеленение стен</h1></section>
 			<section></section>
-			<section></section>
+			{/* <section></section> */}
 			<section></section>
 
 			<section><h1>Панно Семья</h1></section>

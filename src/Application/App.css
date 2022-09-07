@@ -38,21 +38,21 @@ div.app::after{
 
     url(./pages/images/portfolio/section1-1.jpg) 
     url(./pages/images/portfolio/section1-2.jpg) 
-    url(./pages/images/portfolio/section1-3.jpg) 
+    /* url(./pages/images/portfolio/section1-3.jpg)  */
     url(./pages/images/portfolio/section2-1.jpg) 
     url(./pages/images/portfolio/section4-1-touch.jpg) 
 
     url(./pages/images/catalog/moss-graphite-frame-preview.jpg) 
-    url(./pages/images/catalog/moss-kashpo-preview.jpg) 
+    /* url(./pages/images/catalog/moss-kashpo-preview.jpg)  */
     url(./pages/images/catalog/moss-white-frame-preview.jpg) 
     url(./pages/images/catalog/moss-yagel-preview.jpg) 
     url(./pages/images/catalog/moss-composition-preview.jpg) 
     url(./pages/images/catalog/black-square-with-moss-preview.jpg) 
     url(./pages/images/catalog/panno-family-preview.jpg) 
     url(./pages/images/catalog/fern-preview.jpg) 
-    url(./pages/images/catalog/eucalyptus-baby-preview.jpg) 
+    /* url(./pages/images/catalog/eucalyptus-baby-preview.jpg) 
     url(./pages/images/catalog/eucalyptus-stabilized-preview.jpg) 
-    url(./pages/images/catalog/moss-plastovyy-preview.jpg); 
+    url(./pages/images/catalog/moss-plastovyy-preview.jpg);  */
  }
 
 a {

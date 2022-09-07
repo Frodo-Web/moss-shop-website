@@ -69,12 +69,12 @@ const Cards = ({ handleClick }) => {
 				prevPrice='1,600'
 				handleClick={handleClick}
 			/>
-			<Card
+			{/* <Card
 				name='Мох в Кашпо'
 				description='Мох в кашпо ящик. Мох стабилизированный цвет зелёный.'
 				price='1,000'
 				handleClick={handleClick}
-			/>
+			/> */}
 			<Card
 				name='Соты с мхом'
 				description='Соты размером от 22 см до 32 см. Окраска в любой цвет или обработка маслом. Мох по согласованию.'
@@ -114,7 +114,7 @@ const Cards = ({ handleClick }) => {
 				prevPrice='200'
 				handleClick={handleClick}
 			/>
-			<Card
+			{/* <Card
 				name='Эвкалипт бэби, стабилизированный'
 				description='Эвкалипт стабилизированный. Сорт бэби блю. Цена за ветку.'
 				price='450'
@@ -125,13 +125,13 @@ const Cards = ({ handleClick }) => {
 				description='Эвкалипт цинерея стабилизированный. От 200 руб за ветку'
 				price='300'
 				handleClick={handleClick}
-			/>
-			<Card
+			/> */}
+			{/* <Card
 				name='Мох пластовый, стабилизированный'
 				description='Мох пластовой стабилизированный. В продаже от 0,25 метра квадратного. Цена указана за метр квадратный'
 				price='300'
 				handleClick={handleClick}
-			/>
+			/> */}
 		</>
 	)
 }
