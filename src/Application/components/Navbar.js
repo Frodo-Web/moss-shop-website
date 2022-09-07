@@ -18,7 +18,7 @@ const Layout = () => {
         <>
             <input type="checkbox" id="nav-check" />
             <div className="nav-header">
-                <img src='./images/moss.png'></img>
+                <img src='./images/logo2.jpg'></img>
                 <div className='about'>
                     <div className="nav-title">Mox'Pro</div>
                     <div className='description'>Живые растения без воды</div>

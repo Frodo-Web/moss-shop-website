@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     row-gap: var(--row-gap);
 }
 .nav>.nav-header>.about>.description {
@@ -44,7 +45,7 @@
 }
 .nav>.nav-header>img {
     align-self: center;
-    width: 50px;
+    width: 70px;
     height: auto;
 }
 
@@ -115,9 +116,12 @@
         display: none;
     }
 }
-@media (max-width:375px) {
+@media (max-width:385px) {
     .nav>.nav-header>.about>.description {
         display: none;
+    }
+    .nav>.nav-header>img {
+        width: 50px;
     }
 }
 @media (max-width:500px) {
