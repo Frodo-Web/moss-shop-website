@@ -3,13 +3,21 @@
 }
 .home .bgimg {
     position: relative;
-    opacity: 0.9; 
+    min-height: calc(100vh);
+}
+.home .bgimg::before {
+    content: '';
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: var(--theme-transition);
-    min-height: calc(100vh);
+    min-height: calc(100%);
+    min-width: calc(100%); 
   }
 /* .home .paragraph {
     display: flex;
@@ -99,20 +107,20 @@
     /* background-color: transparent;
     text-shadow: 0 0 5px black; */
   }
-.home .wrapper > div:nth-child(1) {
+.home .wrapper > div:nth-child(1)::before {
     background-image: url(./images/contact/3.jpg);
   }
-.home .wrapper > div:nth-child(2)  {
+.home .wrapper > div:nth-child(2)::before  {
     background-image: url(./images/portfolio/section4-1-touch.jpg);
   }
-.home .wrapper > div:nth-child(3)  {
+.home .wrapper > div:nth-child(3)::before  {
     background-image: url(./images/color-horizontal-cropped.jpg);
   }
 @media (max-width:900px) {
-    .home .wrapper > div:nth-child(3)  {
+    .home .wrapper > div:nth-child(3)::before  {
         background-image: url(./images/color-vertical-cropped.jpg);
       }
 }
-.home .wrapper > div:nth-child(4) {
+.home .wrapper > div:nth-child(4)::before {
     background-image: url(./images/contact/3.jpg);
   }
