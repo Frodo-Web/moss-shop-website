@@ -18,13 +18,25 @@
     transform: translate(-50%, -65%);
     display: flex;
     gap: 30px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     background-color: #d6e9fae7;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 800px;
     height: max-content;
     overflow: auto;
+    overscroll-behavior: none;
     transition: var(--theme-transition);
+}
+#order-popup-wrapper .close {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 30px;
+    background: url(./images/cancel-icon.svg);
+    width: 48px;
+    height: 48px;
+    z-index: -1;
 }
 .black-theme #order-popup-wrapper .form {
     background-color: rgba(0, 0, 0, 0.75);
@@ -83,9 +95,19 @@
         --big-fs: 20px;
         --big-fs-s: 16px;
     }
+    #order-popup-wrapper .close {
+        display: block;
+        z-index: 600;
+    }
     #order-popup-wrapper .form {
-        height: calc(80vh - 80px);
-        width: 400px;
+        /* height: calc(80vh - 80px); */
+        padding: 80px 10px 10px 10px;
+        top: 80px;
+        left: 0;
+        transform: translate(0px, 0px);
+        height: calc(100vh - 80px);
+        /* width: 400px; */
+        width: 100vw;
         flex-direction: column;
         align-items: center;
     }
@@ -100,8 +122,8 @@
         --big-fs-s: 15px;
     }
     #order-popup-wrapper .form {
-        width: 300px;
-        padding: 10px;
+        /* width: 300px; */
+        /* padding: 80px 10px 10px 10px; */
 
     }
 }

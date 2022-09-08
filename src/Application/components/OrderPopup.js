@@ -9,10 +9,15 @@ const OrderPopup = ({ order }) => {
     const price = order.price;
     const handleWrapperClick = (event) => {
         if (event.target.id === 'order-popup-wrapper') event.target.style.visibility = "hidden";
+        
     };
+    const handleCloseClick = (event) => {
+        if (event.target.id === 'order-popup-wrapper-close') event.target.parentNode.style.visibility = "hidden";
+    }
 
     return (
         <div id='order-popup-wrapper' onClick={handleWrapperClick}>
+            <div id='order-popup-wrapper-close' className='close' onClick={handleCloseClick}></div>
             <Form image={image} name={name} description={description} price={price} />
         </div>
     )

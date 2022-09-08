@@ -53,6 +53,8 @@ div.app::after{
     /* url(./pages/images/catalog/eucalyptus-baby-preview.jpg) 
     url(./pages/images/catalog/eucalyptus-stabilized-preview.jpg) 
     url(./pages/images/catalog/moss-plastovyy-preview.jpg);  */
+
+    url(./components/images/cancel-icon.svg) 
  }
 
 a {
