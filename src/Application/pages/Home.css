@@ -4,6 +4,7 @@
 .home .bgimg {
     position: relative;
     min-height: calc(100vh);
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 .home .bgimg::before {
     content: '';

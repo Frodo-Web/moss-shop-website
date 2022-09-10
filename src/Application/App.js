@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Body from './components/Body';
@@ -6,8 +6,13 @@ import Footer from './components/Footer';
 import PopUp from './components/PopUp';
 import PopUpOnClick from './components/PopUpOnClick';
 import Loader from './components/Loader';
+import calculateViewportUnits from './helpers/calculateViewportUnits';
 
 const App = () => {
+
+	useEffect(() => {
+		calculateViewportUnits();
+	}, [])
 
 	return (
 		<>
