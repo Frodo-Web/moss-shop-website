@@ -18,7 +18,9 @@ const Service = () => {
 			description: event.target.dataset.description,
 			price: event.target.parentNode.childNodes[3].textContent
 		})
-		document.getElementById('order-popup-wrapper').style.visibility = 'visible';
+		const orderPopupWrapper = document.getElementById('order-popup-wrapper');
+		orderPopupWrapper.style.visibility = 'visible';
+		orderPopupWrapper.classList.toggle("visible");
 		// console.log(getComputedStyle(event.target.parentNode.childNodes[0]).backgroundImage, event.target.parentNode.childNodes[1].textContent, event.target.parentNode.childNodes[3].textContent);
 	}
 	return (

@@ -18,7 +18,9 @@ const Catalog = () => {
 			description: event.target.dataset.description,
 			price: event.target.parentNode.childNodes[3].childNodes[0].textContent
 		})
-		document.getElementById('order-popup-wrapper').style.visibility = 'visible';
+		const orderPopupWrapper = document.getElementById('order-popup-wrapper');
+		orderPopupWrapper.style.visibility = 'visible';
+		orderPopupWrapper.classList.toggle("visible");
 	}
 
 	return (

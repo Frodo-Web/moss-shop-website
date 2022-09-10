@@ -8,11 +8,17 @@ const OrderPopup = ({ order }) => {
     const description = order.description;
     const price = order.price;
     const handleWrapperClick = (event) => {
-        if (event.target.id === 'order-popup-wrapper') event.target.style.visibility = "hidden";
+        if (event.target.id === 'order-popup-wrapper') {
+            event.target.style.visibility = "hidden";
+            event.target.classList.toggle("visible");
+        }
         
     };
     const handleCloseClick = (event) => {
-        if (event.target.id === 'order-popup-wrapper-close') event.target.parentNode.style.visibility = "hidden";
+        if (event.target.id === 'order-popup-wrapper-close') {
+            event.target.parentNode.style.visibility = "hidden";
+            event.target.parentNode.classList.toggle("visible");
+        }
     }
 
     return (
