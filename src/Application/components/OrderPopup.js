@@ -12,7 +12,7 @@ const OrderPopup = ({ order }) => {
             event.target.style.visibility = "hidden";
             event.target.classList.toggle("visible");
         }
-        
+
     };
     const handleCloseClick = (event) => {
         if (event.target.id === 'order-popup-wrapper-close') {
@@ -32,7 +32,7 @@ const OrderPopup = ({ order }) => {
 export default OrderPopup;
 
 const Form = ({ image, name, description, price }) => {
-    const handleClick = (event) => {
+    const handleOrderClick = (event) => {
         event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.'
     }
     const style = {
@@ -41,7 +41,17 @@ const Form = ({ image, name, description, price }) => {
 
     return (
         <div className='form'>
-            <div className="left-column" style={style}></div>
+            {/* <div className="left-column" style={style}></div> */}
+            <div className="left-column">
+                <div className="selected-image" style={style}></div>
+                <div className='images'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div className="right-column">
                 <div>{name}</div>
                 <div>{description}</div>
@@ -52,7 +62,7 @@ const Form = ({ image, name, description, price }) => {
                     <label htmlFor='wishes'>Ваши пожелания: </label>
                     <textarea id='wishes'></textarea>
                     <div></div>
-                    <button onClick={handleClick} type="submit">Заказать</button>
+                    <button onClick={handleOrderClick} type="submit">Заказать</button>
                 </form>
             </div>
 

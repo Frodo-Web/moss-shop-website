@@ -3,7 +3,7 @@
 }
 .home .bgimg {
     position: relative;
-    min-height: calc(100vh);
+    min-height: 100vh;
     min-height: calc(var(--vh, 1vh) * 100);
 }
 .home .bgimg::before {
@@ -17,8 +17,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: var(--theme-transition);
-    min-height: calc(100%);
-    min-width: calc(100%); 
+    min-height: 100%;
+    min-width: 100%; 
   }
 /* .home .paragraph {
     display: flex;
