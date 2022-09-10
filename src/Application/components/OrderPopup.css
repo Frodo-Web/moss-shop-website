@@ -104,13 +104,11 @@
         z-index: 600;
     }
     #order-popup-wrapper .form {
-        /* height: calc(80vh - 80px); */
         padding: 40px 10px 10px 10px;
-        top: 0px;
+        top: 0;
         left: 0;
-        transform: translate(0px, 0px);
-        height: calc(100vh - 80px);
-        /* width: 400px; */
+        /* height: calc(100vh - 80px); */
+        height: 100%;
         width: 100vw;
         transform: scale(0); 
         flex-direction: column;
@@ -123,16 +121,14 @@
         min-height: 300px;
         width: 100%;
     }
+    #order-popup-wrapper .form .right-column {
+        /* padding-bottom: 80px; */
+    }
 }
 @media (max-width:450px) {
     #order-popup-wrapper {
         --big-fs: 18px;
         --big-fs-s: 15px;
-    }
-    #order-popup-wrapper .form {
-        /* width: 300px; */
-        /* padding: 80px 10px 10px 10px; */
-
     }
 }
 #order-popup-wrapper .form .right-column button {
