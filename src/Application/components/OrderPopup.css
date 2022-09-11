@@ -110,9 +110,9 @@
     font-size: var(--big-fs-s);
     text-align: center;
 }
-#order-popup-wrapper .form .right-column > div:nth-child(3) {
+/* #order-popup-wrapper .form .right-column > div:nth-child(3) {
     font-size: var(--big-fs);
-}
+} */
 
 #order-popup-wrapper .form .right-column > .inputs {
     display: flex;

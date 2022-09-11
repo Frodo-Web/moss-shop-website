@@ -68,7 +68,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
             <div className="right-column">
                 <div>{name}</div>
                 <div>{description}</div>
-                <div>{price}</div>
+                {/* <div>{price}</div> */}
                 <form className='inputs'>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
                     <input id='tel' placeholder='+7 (905) 223-23-28' required />
