@@ -71,6 +71,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Мох в сотах'
 				description='Мох в раме сотах чёрный графит. Размер от 22-32 см. Изготовление на заказ за один день.'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='1,300'
 				prevPrice='1,600'
 				handleClick={handleClick}
@@ -92,6 +93,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Мох стабилизированный, Ягель'
 				description='Мох стабилизированный Ягель. Производство в Санкт-Петербурге. Мох отборый крупный не укроп))) Выгодные тарифы на доставку.'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='2,000'
 				prevPrice='3,000'
 				handleClick={handleClick}
@@ -99,24 +101,28 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Композиция из мха'
 				description='Спил грецкого ореха,. Обработка маслом. Мох по желанию.'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='3,000'
 				handleClick={handleClick}
 			/>
 			<Card
 				name='Чёрный квадрат с мхом'
 				description='Полка квадрат с наполнением мха цвета лайм'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='1,300'
 				handleClick={handleClick} />
 			<Card
 				name='Панно Семья'
 				description='Панно Семья изготовление два три дня ( если нет в наличии) цвет чёрный графит( можно любой) мох зелёный
 				 (можно на выбор при наличии) Размер 1000*500( возможно других размеров) Также можно поменять семью по возрастанию детей'
+				 gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='8,000'
 				handleClick={handleClick}
 			/>
 			<Card
 				name='Папоротник'
 				description='Папоротник стабилизированный производства Россия. Цвет в жизни не такой яркий как на фото. Отправка по России'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='130'
 				prevPrice='200'
 				handleClick={handleClick}
