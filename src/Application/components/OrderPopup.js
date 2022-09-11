@@ -6,6 +6,7 @@ const OrderPopup = ({ order }) => {
     const image = order.image;
     const name = order.name;
     const description = order.description;
+    const gallery = order.gallery;
     const price = order.price;
     const handleWrapperClick = (event) => {
         if (event.target.id === 'order-popup-wrapper') {
@@ -24,14 +25,14 @@ const OrderPopup = ({ order }) => {
     return (
         <div id='order-popup-wrapper' onClick={handleWrapperClick}>
             <div id='order-popup-wrapper-close' className='close' onClick={handleCloseClick}></div>
-            <Form image={image} name={name} description={description} price={price} />
+            <Form image={image} name={name} description={description} gallery={gallery} price={price} />
         </div>
     )
 }
 
 export default OrderPopup;
 
-const Form = ({ image, name, description, price }) => {
+const Form = ({ image, name, description, gallery, price }) => {
     const handleOrderClick = (event) => {
         event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.'
     }
@@ -45,11 +46,13 @@ const Form = ({ image, name, description, price }) => {
             <div className="left-column">
                 <div className="selected-image" style={style}></div>
                 <div className='images'>
+                    {/* <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div></div>
-                    <div></div>
+                    <div></div> */}
+                    <div style={style}></div>
+                    {gallery && gallery.map((img, idx) => <div key={idx} style={{backgroundImage:`url(${img})`}}></div>)}
                 </div>
             </div>
             <div className="right-column">

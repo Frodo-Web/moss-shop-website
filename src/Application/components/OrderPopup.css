@@ -74,6 +74,7 @@
     height: 50px;
     width: 50px;
     border: 1px solid greenyellow;
+    background-size: cover;
 }
 #order-popup-wrapper .form .right-column {
     flex: 2;

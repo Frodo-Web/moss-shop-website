@@ -7,15 +7,19 @@ const Catalog = () => {
 		image: "",
 		name: "",
 		description: "",
+		gallery: [],
 		price: ""
 	});
 	const [order, setOrder] = useState(orderFormData);
 
 	const handleClick = (event) => {
+		let gallery = [];
+		if (event.target.dataset.gallery && event.target.dataset.gallery.length > 0) gallery = event.target.dataset.gallery.split(',');
 		setOrder({
 			image: getComputedStyle(event.target.parentNode.childNodes[0]).backgroundImage,
 			name: event.target.parentNode.childNodes[1].textContent,
 			description: event.target.dataset.description,
+			gallery: gallery,
 			price: event.target.parentNode.childNodes[3].childNodes[0].textContent
 		})
 		const orderPopupWrapper = document.getElementById('order-popup-wrapper');
@@ -42,14 +46,14 @@ const Grid = ({ handleClick }) => {
 	)
 }
 
-const Card = ({ name, description, price, prevPrice, handleClick }) => {
+const Card = ({ name, description, gallery, price, prevPrice, handleClick }) => {
 
 	return (
 		<>
 			<div className='card'>
 				<div></div>
 				<div>{name}</div>
-				<button data-description={description} onClick={handleClick}>Подробнее</button>
+				<button data-description={description} data-gallery={gallery} onClick={handleClick}>Подробнее</button>
 				<div>
 					<div>{price} <span className='ruble'>₽</span></div>
 					{prevPrice ? <div className='line-through'>{prevPrice} <span className='ruble'>₽</span></div> : ''}
@@ -80,6 +84,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Соты с мхом'
 				description='Соты размером от 22 см до 32 см. Окраска в любой цвет или обработка маслом. Мох по согласованию.'
+				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='1,300'
 				prevPrice='1,600'
 				handleClick={handleClick}
