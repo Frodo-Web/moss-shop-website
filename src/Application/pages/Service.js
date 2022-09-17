@@ -95,7 +95,7 @@ const Cards = ({ handleClick }) => {
 				handleClick={handleClick}
 			/>
 			<Card
-				name='Фито дизайн интерьера'
+				name='Фито стены и озеленение помещений'
 				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
 				gallery={['./images/react/catalog/1.svg', './images/react/catalog/2.svg', './images/react/catalog/3.svg', './images/react/catalog/4.svg', './images/react/catalog/5.svg',]}
 				price='10,000'

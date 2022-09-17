@@ -18,7 +18,7 @@ const Content = () => {
 		<div className='wrapper'>
 			<div className="bgimg">
 				<div className="caption">
-					Mox'Pro - Мы разрабатываем фито дизайн интерьера, стабилизированные растения - одно из наших направлений
+					Mox'Pro - Мы производство стабилизированного мха и растений. Изготавливаем фито стены и композиции из растений без ухода
 				</div>
 			</div>
 			{/* <div className='paragraph'>

@@ -82,41 +82,41 @@ const Cards = ({ handleClick }) => {
 				price='1,000'
 				handleClick={handleClick}
 			/> */}
-			<Card
+			{/* <Card
 				name='Соты с мхом'
 				description='Соты размером от 22 см до 32 см. Окраска в любой цвет или обработка маслом. Мох по согласованию.'
 				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='1,300'
 				prevPrice='1,600'
 				handleClick={handleClick}
-			/>
+			/> */}
 			<Card
 				name='Мох стабилизированный, Ягель'
 				description='Мох стабилизированный Ягель. Производство в Санкт-Петербурге. Мох отборый крупный не укроп))) Выгодные тарифы на доставку.'
 				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
-				price='2,000'
+				price='1,500'
 				prevPrice='3,000'
 				handleClick={handleClick}
 			/>
 			<Card
-				name='Композиция из мха'
+				name='Фито композиции'
 				description='Спил грецкого ореха,. Обработка маслом. Мох по желанию.'
 				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
-				price='3,000'
+				price='от 3,000'
 				handleClick={handleClick}
 			/>
-			<Card
+			{/* <Card
 				name='Чёрный квадрат с мхом'
 				description='Полка квадрат с наполнением мха цвета лайм'
 				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
 				price='1,300'
-				handleClick={handleClick} />
+				handleClick={handleClick} /> */}
 			<Card
 				name='Панно Семья'
 				description='Панно Семья изготовление два три дня ( если нет в наличии) цвет чёрный графит( можно любой) мох зелёный
 				 (можно на выбор при наличии) Размер 1000*500( возможно других размеров) Также можно поменять семью по возрастанию детей'
 				 gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
-				price='8,000'
+				price='6,000'
 				handleClick={handleClick}
 			/>
 			<Card

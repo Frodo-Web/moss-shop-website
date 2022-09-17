@@ -147,22 +147,22 @@
 /* .catalog .card:nth-child(2) > div:nth-child(1) {
     background-image: url(./images/catalog/moss-kashpo-preview.jpg);
 } */
-.catalog .card:nth-child(2) > div:nth-child(1) {
+/* .catalog .card:nth-child(2) > div:nth-child(1) {
     background-image: url(./images/catalog/moss-white-frame-preview.jpg);
-}
-.catalog .card:nth-child(3) > div:nth-child(1) {
+} */
+.catalog .card:nth-child(2) > div:nth-child(1) {
     background-image: url(./images/catalog/moss-yagel-preview.jpg);
 }
-.catalog .card:nth-child(4) > div:nth-child(1) {
+.catalog .card:nth-child(3) > div:nth-child(1) {
     background-image: url(./images/catalog/moss-composition-preview.jpg);
 }
-.catalog .card:nth-child(5) > div:nth-child(1) {
+/* .catalog .card:nth-child(5) > div:nth-child(1) {
     background-image: url(./images/catalog/black-square-with-moss-preview.jpg);
-}
-.catalog .card:nth-child(6) > div:nth-child(1) {
+} */
+.catalog .card:nth-child(4) > div:nth-child(1) {
     background-image: url(./images/catalog/panno-family-preview.jpg);
 }
-.catalog .card:nth-child(7) > div:nth-child(1) {
+.catalog .card:nth-child(5) > div:nth-child(1) {
     background-image: url(./images/catalog/fern-preview.jpg);
 }
 /* .catalog .card:nth-child(9) > div:nth-child(1) {

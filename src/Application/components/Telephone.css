@@ -84,5 +84,5 @@
 }
 #order-popup-wrapper .telephone .code[data-code="BY"] + input#tel {
     font-size: calc(var(--big-fs-s) - 2px);
-    padding: 15px 15px 15px 130px;
+    padding: 16.5px 15px 16.5px 130px;
 }
