@@ -121,16 +121,13 @@
     gap: 10px;
     font-size: var(--big-fs-s);
 }
-#order-popup-wrapper .form .right-column > .inputs > input {
-    font-size: var(--big-fs-s);
-}
 #order-popup-wrapper .form .right-column > .inputs > textarea {
     font-size: var(--big-fs-s);
     resize: vertical;
     height: 60px;
     width: 100%;
 }
-#order-popup-wrapper .form .right-column > .inputs > div {
+#order-popup-wrapper .form .right-column > .inputs > div.info {
     text-align: center;
     font-size: var(--big-fs-s);
 }

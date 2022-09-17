@@ -1,0 +1,64 @@
+#order-popup-wrapper .telephone {
+}
+#order-popup-wrapper .telephone > .container {
+    position: relative;
+}
+#order-popup-wrapper .telephone .flags-container {
+    --fc-container-w: 65px;
+    --fc-container-h: 43px;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--fc-container-w);
+    height: var(--fc-container-h);
+    display: flex;
+}
+#order-popup-wrapper .telephone .flags {
+    --f-w: var(--big-fs-s);
+    width: calc(var(--fc-container-w) - var(--f-w));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+#order-popup-wrapper .telephone .flags ul {
+    position: absolute;
+    top: var(--fc-container-h);
+    left: 0px;
+    display: none;
+}
+#order-popup-wrapper .telephone .flags ul.active {
+    display: block;
+}
+#order-popup-wrapper .telephone .flags ul li {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+#order-popup-wrapper .telephone .flags ul li:nth-child(2) {
+    background-position: 58% center;
+}
+#order-popup-wrapper .telephone [data-code="RU"] {
+    background-image: url(./images/Russia\ flag.svg);
+}
+#order-popup-wrapper .telephone [data-code="KZ"] {
+    background-image: url(./images/Kazakhstan\ flag.svg);
+    background-position: 58% center;
+
+}
+#order-popup-wrapper .telephone .dropdown-arrow {
+    background-image: url(./images/dropdown\ arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 26px;
+}
+#order-popup-wrapper .telephone input#tel {
+    font-size: var(--big-fs-s);
+    padding: 15px 15px 15px 70px;
+}

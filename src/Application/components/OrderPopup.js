@@ -1,5 +1,6 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import './OrderPopup.css';
+import Telephone from './Telephone';
 
 const OrderPopup = ({ order }) => {
 
@@ -14,11 +15,22 @@ const OrderPopup = ({ order }) => {
         firstElement.current.parentNode.childNodes.forEach((element) => element.classList.remove("active"));
         firstElement.current.classList.add("active");
     }
+    const hideFlags = (target) => {
+        if (target.className !== 'flags' &&
+        target.className !== 'dropdown-arrow' &&
+        target.tagName !== 'UL' &&
+        target.tagName !== 'LI') {
+            document.querySelectorAll('#order-popup-wrapper .telephone .flags ul')[0].classList.remove('active');
+        }
+    }
     const handleWrapperClick = (event) => {
         if (event.target.id === 'order-popup-wrapper') {
             event.target.style.visibility = "hidden";
             event.target.classList.toggle("visible");
             resetActive();
+            hideFlags(event.target);
+        } else {
+            hideFlags(event.target);
         }
 
     };
@@ -27,13 +39,14 @@ const OrderPopup = ({ order }) => {
             event.target.parentNode.style.visibility = "hidden";
             event.target.parentNode.classList.toggle("visible");
             resetActive();
+            hideFlags(event.target);
         }
     }
 
     return (
         <div id='order-popup-wrapper' onClick={handleWrapperClick}>
             <div id='order-popup-wrapper-close' className='close' onClick={handleCloseClick}></div>
-            <Form image={image} name={name} description={description} gallery={gallery} price={price} firstElement={firstElement}/>
+            <Form image={image} name={name} description={description} gallery={gallery} price={price} firstElement={firstElement} />
         </div>
     )
 }
@@ -46,7 +59,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
         event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.'
     }
     const style = (image) => {
-       return { backgroundImage: image }
+        return { backgroundImage: image }
     };
 
     const handleGalleryClick = (event) => {
@@ -62,7 +75,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                 <div className="selected-image" style={style(image)}></div>
                 <div className='images'>
                     <div style={style(image)} onClick={handleGalleryClick} className='active' ref={firstElement}></div>
-                    {gallery && gallery.map((img, idx) => <div key={idx} style={{backgroundImage:`url(${img})`}} onClick={handleGalleryClick}></div>)}
+                    {gallery && gallery.map((img, idx) => <div key={idx} style={{ backgroundImage: `url(${img})` }} onClick={handleGalleryClick}></div>)}
                 </div>
             </div>
             <div className="right-column">
@@ -71,10 +84,10 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                 {/* <div>{price}</div> */}
                 <form className='inputs'>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
-                    <input id='tel' placeholder='+7 (905) 223-23-28' required />
+                    <Telephone />
                     <label htmlFor='wishes'>Ваши пожелания: </label>
                     <textarea id='wishes'></textarea>
-                    <div></div>
+                    <div className='info'></div>
                     <button onClick={handleOrderClick} type="submit">Заказать</button>
                 </form>
             </div>
