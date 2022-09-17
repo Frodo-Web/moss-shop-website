@@ -42,27 +42,26 @@ const Telephone = () => {
         codeChange(event.target);
     }
 
-    const onTelInput = (event) => {
-        console.log(event)
-        console.log(event.keyCode);
-        console.log(event.target);
-        console.log(telCode.current);
-        console.log(event.target.selectionStart);
+    function phoneFormat(input) {
+        input = input.replace(/\D/g,'');
+        var size = input.length;
+        if (size>0) {input="("+input}
+        if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
+        if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
+        if (size>8) {input=input.slice(0,12)+"-" +input.slice(12)}
+        return input;
     }
 
-    const onCodeDelete = (event) => {
-        if (event.target.selectionStart <= 3) {
-            if (event.which == 8 || event.which == 46) {
-                event.preventDefault();
-            }
-        }
+    const onTelInput = (event) => {
+        event.target.value = phoneFormat(event.target.value);
+
     }
 
     return (
         <>
             <div className='telephone'>
                 <div className='container'>
-                    <div className='flags-container' >
+                    <div className='flags-container'>
                         <div className='flags' data-code="RU" onClick={handleFlagsClick}>
                             <ul>
                                 <li data-code="RU" data-name="Russia" onClick={handleFlagClick}></li>
