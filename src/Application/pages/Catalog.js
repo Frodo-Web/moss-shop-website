@@ -71,7 +71,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Мох в сотах'
 				description='Мох в раме сотах чёрный графит. Размер от 22-32 см. Изготовление на заказ за один день.'
-				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
+				gallery={['./images/react/catalog/moss-graphite-frame-2.jpg','./images/react/catalog/moss-graphite-frame-3.jpg','./images/react/catalog/moss-white-frame-1.jpg','./images/react/catalog/black-square-with-moss.jpg', './images/react/catalog/moss-frames-on-wall.jpg',]}
 				price='1,300'
 				prevPrice='1,600'
 				handleClick={handleClick}
@@ -93,7 +93,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Мох стабилизированный, Ягель'
 				description='Мох стабилизированный Ягель. Производство в Санкт-Петербурге. Мох отборый крупный не укроп))) Выгодные тарифы на доставку.'
-				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
+				gallery={['./images/react/catalog/moss-yagel.jpg', './images/react/catalog/moss-yagel2.jpg', './images/react/catalog/moss-yagel3.jpg', './images/react/catalog/moss-yagel4.jpg', './images/react/catalog/moss-yagel5.jpg', './images/react/catalog/moss-yagel6.jpg', './images/react/catalog/moss-yagel7.jpg', './images/react/catalog/moss-yagel8.jpg', './images/react/catalog/moss-yagel9.jpg', './images/react/catalog/moss-yagel10.jpg', './images/react/catalog/moss-yagel11.jpg', './images/react/catalog/moss-yagel12.jpg', './images/react/catalog/moss-yagel13.jpg', './images/react/catalog/moss-yagel14.jpg', './images/react/catalog/moss-yagel15.jpg',]}
 				price='1,500'
 				prevPrice='3,000'
 				handleClick={handleClick}
@@ -101,7 +101,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Фито композиции'
 				description='Спил грецкого ореха,. Обработка маслом. Мох по желанию.'
-				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
+				gallery={['./images/react/catalog/moss-kashpo-1.jpg',]}
 				price='от 3,000'
 				handleClick={handleClick}
 			/>
@@ -115,14 +115,14 @@ const Cards = ({ handleClick }) => {
 				name='Панно Семья'
 				description='Панно Семья изготовление два три дня ( если нет в наличии) цвет чёрный графит( можно любой) мох зелёный
 				 (можно на выбор при наличии) Размер 1000*500( возможно других размеров) Также можно поменять семью по возрастанию детей'
-				 gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
+				 gallery={['./images/react/catalog/panno-family2.jpg',]}
 				price='6,000'
 				handleClick={handleClick}
 			/>
 			<Card
 				name='Папоротник'
 				description='Папоротник стабилизированный производства Россия. Цвет в жизни не такой яркий как на фото. Отправка по России'
-				gallery={['./images/react/catalog/1.svg','./images/react/catalog/2.svg','./images/react/catalog/3.svg','./images/react/catalog/4.svg','./images/react/catalog/5.svg',]}
+				gallery={[]}
 				price='130'
 				prevPrice='200'
 				handleClick={handleClick}

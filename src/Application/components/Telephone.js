@@ -72,7 +72,7 @@ const Telephone = () => {
                         <div className='dropdown-arrow' onClick={handleFlagsClick}></div>
                     </div>
                     <span className='code' data-code="RU" ref={telCode}>+7</span>
-                    <input type='text' id='tel' placeholder='(905) 223-23-28' onChange={onTelInput} required />
+                    <input type='text' id='tel' placeholder='(___) ___-__-__' onChange={onTelInput} required />
                 </div>
             </div>
         </>

@@ -55,13 +55,14 @@
     flex: 3;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
 }
 #order-popup-wrapper .form .left-column .selected-image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: 350px;
 }
 #order-popup-wrapper .form .left-column > .images {
     display: flex;
@@ -158,10 +159,10 @@
     } 
     #order-popup-wrapper .form .left-column {
         width: 80%;
-        min-height: 400px;
+        /* min-height: 400px; */
     }
     #order-popup-wrapper .form .left-column .selected-image {
-        /* min-height: 300px; */
+        min-height: 400px; 
         width: 100%; 
     }
     #order-popup-wrapper .form .right-column {

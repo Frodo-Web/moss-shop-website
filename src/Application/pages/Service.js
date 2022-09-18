@@ -90,14 +90,14 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Озеленение помещений искусственными растениями'
 				description='Выполнение озеленения помещений искуственными растениями премиум качества! Любые формы оплаты! Визуализации проектов! Лучшие цены на рынке!'
-				gallery={['./images/react/catalog/1.svg', './images/react/catalog/2.svg', './images/react/catalog/3.svg', './images/react/catalog/4.svg', './images/react/catalog/5.svg',]}
+				gallery={['./images/react/services/ozelenenie-stabilizirovannimi.jpg', './images/react/services/tv2.jpg', './images/react/services/wall6.jpg', ]}
 				price='18,000'
 				handleClick={handleClick}
 			/>
 			<Card
 				name='Фито стены и озеленение помещений'
 				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
-				gallery={['./images/react/catalog/1.svg', './images/react/catalog/2.svg', './images/react/catalog/3.svg', './images/react/catalog/4.svg', './images/react/catalog/5.svg',]}
+				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg',]}
 				price='10,000'
 				handleClick={handleClick}
 			/>

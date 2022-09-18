@@ -14,6 +14,7 @@ const OrderPopup = ({ order }) => {
     const resetActive = () => {
         firstElement.current.parentNode.childNodes.forEach((element) => element.classList.remove("active"));
         firstElement.current.classList.add("active");
+        firstElement.current.parentNode.previousSibling.style.backgroundImage = firstElement.current.style.backgroundImage; 
     }
     const hideFlags = (target) => {
         if (target.className !== 'flags' &&
