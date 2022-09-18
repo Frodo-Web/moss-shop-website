@@ -14,13 +14,13 @@ const OrderPopup = ({ order }) => {
     const resetActive = () => {
         firstElement.current.parentNode.childNodes.forEach((element) => element.classList.remove("active"));
         firstElement.current.classList.add("active");
-        firstElement.current.parentNode.previousSibling.style.backgroundImage = firstElement.current.style.backgroundImage; 
+        firstElement.current.parentNode.previousSibling.style.backgroundImage = firstElement.current.style.backgroundImage;
     }
     const hideFlags = (target) => {
         if (target.className !== 'flags' &&
-        target.className !== 'dropdown-arrow' &&
-        target.tagName !== 'UL' &&
-        target.tagName !== 'LI') {
+            target.className !== 'dropdown-arrow' &&
+            target.tagName !== 'UL' &&
+            target.tagName !== 'LI') {
             document.querySelectorAll('#order-popup-wrapper .telephone .flags ul')[0].classList.remove('active');
         }
     }
@@ -68,6 +68,16 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
         event.target.classList.add("active");
         const targetImage = getComputedStyle(event.target).backgroundImage;
         event.target.parentNode.previousSibling.style.backgroundImage = targetImage;
+        const keyframes = [
+            { transform: 'translateX(-10%)', opacity: '0' },
+            { transform: 'translateX(0)', opacity: '1' }
+        ];
+
+        const options = {
+            duration: 250,
+            iterations: 1,
+        }
+        event.target.parentNode.previousSibling.animate(keyframes, options);
     }
 
     return (

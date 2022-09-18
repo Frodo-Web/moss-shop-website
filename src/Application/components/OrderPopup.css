@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 #order-popup-wrapper .form .left-column > .images > div {
     /* height: 100%; */
@@ -79,6 +79,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid grey;
 }
 #order-popup-wrapper .form .left-column > .images > div::after {
     content: '';
@@ -90,6 +91,9 @@
     height: 3px;
     background-color: rgb(0, 255, 106);
     transition: width 0.3s ease-out;
+}
+#order-popup-wrapper .form .left-column > .images > div.active {
+    border: 1px solid white;
 }
 #order-popup-wrapper .form .left-column > .images > div.active::after {
     width: 50%;

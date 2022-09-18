@@ -97,7 +97,7 @@ const Cards = ({ handleClick }) => {
 			<Card
 				name='Фито стены и озеленение помещений'
 				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
-				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg',]}
+				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg', './images/react/services/wall7.jpg', './images/react/services/wall8.jpg',]}
 				price='10,000'
 				handleClick={handleClick}
 			/>
