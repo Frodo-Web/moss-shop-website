@@ -79,6 +79,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.75;
     border: 1px solid grey;
 }
 #order-popup-wrapper .form .left-column > .images > div::after {
@@ -93,6 +94,7 @@
     transition: width 0.3s ease-out;
 }
 #order-popup-wrapper .form .left-column > .images > div.active {
+    opacity: 1;
     border: 1px solid white;
 }
 #order-popup-wrapper .form .left-column > .images > div.active::after {
