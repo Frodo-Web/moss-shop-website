@@ -79,6 +79,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: black;
     opacity: 0.75;
     border: 1px solid grey;
 }
