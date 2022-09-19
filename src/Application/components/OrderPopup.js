@@ -68,26 +68,26 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
         event.target.classList.add("active");
         const targetImage = getComputedStyle(event.target).backgroundImage;
         event.target.parentNode.previousSibling.style.backgroundImage = targetImage;
-        const translate = [
+        const transform = [
             { transform: 'translate(-5%) scale(1.1)' },
             { transform: 'translate(0,0), scale(1)' }
         ];
 
-        const grayScale = [
+        const brightness = [
             { filter: 'brightness(60%)' },
             { filter: 'none' }
         ]
 
-        const translateOptions = {
+        const transformOptions = {
             duration: 250,
             iterations: 1,
         }
-        const grayScaleOptions = {
+        const brightnessOptions = {
             duration: 400,
             iterations: 1,
         }
-        event.target.parentNode.previousSibling.animate(translate, translateOptions);
-        event.target.parentNode.previousSibling.animate(grayScale, grayScaleOptions);
+        event.target.parentNode.previousSibling.animate(transform, transformOptions);
+        event.target.parentNode.previousSibling.animate(brightness, brightnessOptions);
     }
 
     return (

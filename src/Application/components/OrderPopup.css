@@ -82,6 +82,7 @@
     background-color: black;
     opacity: 0.75;
     border: 1px solid grey;
+    cursor: pointer;
 }
 #order-popup-wrapper .form .left-column > .images > div::after {
     content: '';
