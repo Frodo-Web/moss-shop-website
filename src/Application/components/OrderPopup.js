@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './OrderPopup.css';
 import Telephone from './Telephone';
 
@@ -56,8 +56,22 @@ export default OrderPopup;
 
 const Form = ({ image, name, description, gallery, price, firstElement }) => {
 
+    const telephoneInput = useRef(null);
+    const [wishesText, setWishesText] = useState("");
+
     const handleOrderClick = (event) => {
-        event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.'
+        event.preventDefault();
+        if(telephoneInput?.current.value !== undefined && telephoneInput?.current.value.length !== 15) { 
+            event.target.previousSibling.textContent = 'Пожалуйста, правильно укажите ваш номер телефона';
+        } else if (wishesText.length > 1350) {
+            event.target.previousSibling.textContent = 'Текст пожеланий слишком большой';
+        } else {
+            event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.';
+            console.log('Success logic');
+        } 
+    }
+    const onWishesChange = (event) => {
+        setWishesText(event.target.value);
     }
     const style = (image) => {
         return { backgroundImage: image }
@@ -70,7 +84,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
         event.target.parentNode.previousSibling.style.backgroundImage = targetImage;
         const transform = [
             { transform: 'translate(-5%) scale(1.1)' },
-            { transform: 'translate(0,0), scale(1)' }
+            { transform: 'translate(0%,0%), scale(1.0)' }
         ];
 
         const brightness = [
@@ -103,11 +117,11 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                 <div>{name}</div>
                 <div>{description}</div>
                 {/* <div>{price}</div> */}
-                <form className='inputs'>
+                <form className='inputs' noValidate>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
-                    <Telephone />
+                    <Telephone telephoneInputHook={telephoneInput} />
                     <label htmlFor='wishes'>Ваши пожелания: </label>
-                    <textarea id='wishes'></textarea>
+                    <textarea id='wishes' onChange={onWishesChange}></textarea>
                     <div className='info'></div>
                     <button onClick={handleOrderClick} type="submit">Заказать</button>
                 </form>

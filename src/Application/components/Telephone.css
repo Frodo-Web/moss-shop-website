@@ -74,6 +74,13 @@
     padding: 15px 15px 15px 110px;
     width: 270px;
 }
+
+#order-popup-wrapper .telephone input#tel.valid {
+    border-bottom: 3px green solid;
+}
+#order-popup-wrapper .telephone input#tel.invalid {
+    border-bottom: 3px red solid;
+}
 #order-popup-wrapper .telephone .code {
     color:black;
     font-size: calc(var(--big-fs-s) + 3px);

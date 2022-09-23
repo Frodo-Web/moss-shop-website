@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Telephone.css';
 
-const Telephone = () => {
+const Telephone = ({telephoneInputHook}) => {
 
     const countryCode = {
         Russia: '+7',
@@ -54,7 +54,13 @@ const Telephone = () => {
 
     const onTelInput = (event) => {
         event.target.value = phoneFormat(event.target.value);
-
+        if(event.target.value.length === 15) {
+            event.target.classList.remove("invalid");
+            event.target.classList.add("valid");
+        } else {
+            event.target.classList.remove("valid");
+            event.target.classList.add("invalid");
+        }
     }
 
     return (
@@ -72,7 +78,7 @@ const Telephone = () => {
                         <div className='dropdown-arrow' onClick={handleFlagsClick}></div>
                     </div>
                     <span className='code' data-code="RU" ref={telCode}>+7</span>
-                    <input type='text' id='tel' placeholder='(___) ___-__-__' onChange={onTelInput} required />
+                    <input type='text' id='tel' placeholder='(___) ___-__-__' onChange={onTelInput} ref={telephoneInputHook} required/>
                 </div>
             </div>
         </>
