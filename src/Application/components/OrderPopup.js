@@ -62,6 +62,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
     const handleOrderClick = (event) => {
         event.preventDefault();
         if(telephoneInput?.current.value !== undefined && telephoneInput?.current.value.length !== 15) { 
+            telephoneInput.current.classList.add("invalid");
             event.target.previousSibling.textContent = 'Пожалуйста, правильно укажите ваш номер телефона';
         } else if (wishesText.length > 1350) {
             event.target.previousSibling.textContent = 'Текст пожеланий слишком большой';
