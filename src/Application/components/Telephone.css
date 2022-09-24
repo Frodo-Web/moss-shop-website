@@ -76,10 +76,15 @@
 }
 
 #order-popup-wrapper .telephone input#tel.valid {
-    border-bottom: 3px green solid;
+    border: 3px green solid;
+    outline: none !important;
 }
 #order-popup-wrapper .telephone input#tel.invalid {
-    border-bottom: 3px red solid;
+    border: 3px red solid;
+    outline: none !important;
+}
+#order-popup-wrapper .telephone input:focus#tel.invalid {
+    border: 3px rgba(255, 0, 0, 0.5) solid;
 }
 #order-popup-wrapper .telephone .code {
     color:black;

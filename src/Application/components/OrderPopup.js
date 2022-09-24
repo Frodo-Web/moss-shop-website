@@ -121,6 +121,8 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                 <form className='inputs' noValidate>
                     <label htmlFor='tel'>Укажите ваш номер: </label>
                     <Telephone telephoneInputHook={telephoneInput} />
+                    <label htmlFor='clientName'>Ваше имя: </label>
+                    <input type='text' id='clientName' placeholder='...' required/>
                     <label htmlFor='wishes'>Ваши пожелания: </label>
                     <textarea id='wishes' onChange={onWishesChange}></textarea>
                     <div className='info'></div>
