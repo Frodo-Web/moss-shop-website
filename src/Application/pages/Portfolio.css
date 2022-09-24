@@ -39,7 +39,7 @@
     background-size: var(--bg-size);
     background-position: var(--bg-position);
 }
-h1	{
+.portfolio section h1	{
 	position: absolute;
 	top: 50%;
 	width: 100%;
