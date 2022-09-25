@@ -16,10 +16,25 @@
     --fs-title: 110px;
     --fs-intro: 22px;
 }
-@media (max-width:900px), (max-height:680px) {
+.home main section.intro,
+.home main section:nth-child(3),
+.home main section:nth-child(4) {
+    --fs-title: 60px;
+}
+@media (max-width:1000px), (max-height:720px) {
     .home main {
         --fs-title: 60px;
-        --fs-intro: 16px;
+        --fs-intro: 18px;
+    }
+    .home main section.intro,
+    .home main section:nth-child(3),
+    .home main section:nth-child(4) {
+        --fs-title: 40px;
+    }
+}
+@media (max-width:430px) {
+    .home main section:nth-child(4) {
+        --fs-title: 26px
     }
 }
 .home main section {
@@ -30,6 +45,12 @@
 }
 .home main section:nth-child(1) {
     height: calc(var(--vh, 1vh) * 100 - 80px);
+}
+@media (max-height: 800px) {
+    .home main section {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100 - 80px);
+    }
 }
 .home main section .hero__bg {
     position: fixed;
@@ -57,20 +78,26 @@
 .home main .hero__text {
     width: 100%;
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 460px 370px 1fr 1fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
     height: 70%;
     gap: 10px;
 }
+.home main section.hero .hero__text {
+    grid-template-columns: 4fr 1fr 1fr 460px 370px 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 @media (max-width:910px) {
-    .home main .hero__text {
+    .home main section.hero .hero__text {
         grid-template-columns: 4fr 1fr 1fr 390px 250px 1fr 1fr 4fr;
     }  
 }
 .home main .hero__footprint {
     opacity: 0.7;
     height: 100%;
+    z-index: 0;
+}
+.home main section.hero .hero__footprint {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -78,52 +105,59 @@
 }
 .home main .hero__title,
 .home main .hero__intro {
+    text-shadow: 0 0.1em 0.9375rem rgb(0, 0, 0);
+    z-index: 2;
+}
+.home main section.hero .hero__title,
+.home main section.hero .hero__intro {
     grid-column-start: 5;
     grid-column-end: 7;
 }
 .home main .hero__title {
     font-size: var(--fs-title);
+}
+.home main section.hero .hero__title {
     grid-row-start: 2;
 }
 .home main .hero__intro {
     font-size: var(--fs-intro);
     max-width: 25ch;
-    grid-row-start: 3;
     font-family: "Overpass Mono", monospace;
 }
-@media (max-width:710px) {
-    .home main .hero__footprint {
+.home main section.hero .hero__intro {
+    grid-row-start: 3;
+}
+@media (max-width:750px) {
+    .home main section.hero .hero__footprint {
         grid-row: 3 / 13;
         object-fit: cover;
         width: 100%;
     }
-    .home main .hero__footprint {
+    .home main section.hero .hero__footprint {
         grid-column: 2 / -2;
     }
-    .home main .hero__text {
+    .home main section.hero .hero__text {
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(15, 1fr) ;
     }
-    .home main .hero__title {
+    .home main section.hero .hero__title {
         grid-row: 4 / 5;
         grid-column: -3 / -4;
-        z-index: 1;
     }
-    .home main .hero__intro {
+    .home main section.hero .hero__intro {
         grid-row: 5 / 6;
         grid-column: -3 / -4;
-        z-index: 1;
     }
 }
 @media (max-width:310px) {
-    .home main .hero__text {
+    .home main section.hero .hero__text {
         grid-template-columns:  1fr 10fr 10fr 1fr ;
     }
-    .home main .hero__footprint {
+    .home main section.hero .hero__footprint {
         grid-column: 1 / -1;
     }
-    .home main .hero__title,
-    .home main .hero__intro {
+    .home main section.hero .hero__title,
+    .home main section.hero .hero__intro {
         grid-column: 2 / -2;
     }
 }
@@ -147,14 +181,17 @@
     .home main section .section__header {
         display: none;
     }
-    .home main .hero__text {
+    .home main section.hero .hero__text {
         height: 100%;
     }
 }
-
 .home main section.intro {
-    background-color: rgba(43, 138, 130, 0.8);
+    background-color: rgba(43, 138, 130, 0.5);
 }
 .home main section.learn {
-    background-color: rgba(138, 43, 68, 0.8);
+    background-color: rgba(138, 43, 68, 0.5);
+}
+.home main section:nth-child(3),
+.home main section:nth-child(4) {
+    display: none;
 }
