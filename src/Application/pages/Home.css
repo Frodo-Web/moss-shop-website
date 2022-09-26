@@ -176,10 +176,6 @@
 .home main section.learn {
     background-color: rgba(138, 43, 68, 0.5);
 }
-.home main section:nth-child(3),
-.home main section:nth-child(4) {
-    display: none;
-}
 .home main section.intro .hero__text {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -269,5 +265,95 @@
     }
     .home main section.intro .hero__intro {
         --fs-intro: 16px;
+    }
+}
+.home main section.funfact .hero__text {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.home main section.funfact .hero__footprint {
+    grid-row: 2 / -2;
+    grid-column: 3 / 6;
+    object-fit: cover;
+}
+.home main section.funfact .hero__title,
+.home main section.funfact .hero__intro {
+    grid-column: 6 / 10;
+}
+.home main section.funfact .hero__title {
+    --fs-title: 58px;
+    grid-row: 2 / 3;
+}
+.home main section.funfact .hero__intro {
+    --fs-intro: 22px;
+    grid-row: 3 / 4;
+}
+@media (max-width:700px) {
+    .home main section.funfact .hero__text {
+        height: 100%;
+    }
+    .home main section.funfact .hero__footprint {
+        grid-column: 2 / -2;
+        width: 100%;
+    }
+    .home main section.funfact .hero__title,
+    .home main section.funfact .hero__intro {
+        grid-column: 3 / -2;
+    }
+    .home main section.funfact .hero__title {
+        --fs-title: 48px;
+    }
+    .home main section.funfact .hero__intro {
+        --fs-intro: 20px;
+    }
+}
+@media (max-height:800px) {
+    .home main section.funfact .hero__title {
+        --fs-title: 48px;
+    }
+    .home main section.funfact .hero__intro {
+        --fs-intro: 20px;
+    } 
+}
+@media (max-height:650px) {
+    .home main section.funfact .hero__title {
+        --fs-title: 36px;
+    }
+    .home main section.funfact .hero__intro {
+        --fs-intro: 18px;
+    } 
+}
+@media (max-height:580px) {
+    .home main section.funfact .hero__text {
+        height: 100%;
+    }
+    .home main section.funfact .hero__title {
+        grid-row: 2 / 4;
+    }
+    .home main section.funfact .hero__intro {
+        grid-row: 4 / -1;
+    }
+}
+@media (max-height:480px) {
+    .home main section.funfact .hero__title {
+        --fs-title: 32px;
+    }
+    .home main section.funfact .hero__intro {
+        --fs-intro: 16px;
+    } 
+}
+@media (max-width:470px) {
+    .home main section.funfact .hero__footprint {
+        grid-column: 1 / -1;
+    }
+    .home main section.funfact .hero__title,
+    .home main section.funfact .hero__intro {
+        grid-column: 3 / -2;
+    }
+    .home main section.funfact .hero__title {
+        --fs-title: 36px;
+    }
+    .home main section.funfact .hero__intro {
+        --fs-intro: 18px;
     }
 }
