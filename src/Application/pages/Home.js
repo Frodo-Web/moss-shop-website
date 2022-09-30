@@ -36,7 +36,7 @@ const Content = () => {
 						</div>
 					</div>
 				</section>
-				<section className='section intro second'>
+				<section className='section intro'>
 					<header className="section__header">
 						<h3 className="section__title">Введение</h3>
 					</header>
@@ -48,7 +48,7 @@ const Content = () => {
 						</div>
 					</div>
 				</section>
-				<section className='section funfact second'>
+				<section className='section funfact'>
 					<header className="section__header">
 						<h3 className="section__title">Факт</h3>
 					</header>
@@ -60,7 +60,7 @@ const Content = () => {
 						</div>
 					</div>
 				</section>
-				<section className='section learn second'>
+				<section className='section learn'>
 					<header className="section__header">
 						<h3 className="section__title">Подробнее</h3>
 					</header>
