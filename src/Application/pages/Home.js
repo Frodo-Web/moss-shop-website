@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Home.css';
 
 const Home = () => {
@@ -14,8 +14,40 @@ export default Home;
 
 const Content = () => {
 
-	useEffect(() => {
+	const observer = useRef(undefined);
 
+	const visualEffect = () => {
+		const sections = [...document.querySelectorAll(".home main section")];
+		let options = {
+            rootMargin: "0px",
+            threshold: 0.5
+        };
+		const callback = (entries, observer) => {
+            entries.forEach(entry => {
+                const { target } = entry;
+
+                if (entry.intersectionRatio >= 0.5) {
+                    target.classList.add("is-visible");
+                } else {
+                    target.classList.remove("is-visible");
+                }
+            });
+        };
+		if (observer && observer.current) observer.current.disconnect();
+		observer.current = new IntersectionObserver(callback, options);
+		sections.forEach((section, index) => {
+            const sectionChildren = [...section.querySelector("[data-content] .hero__text").children];
+
+            sectionChildren.forEach((el, index) => {
+                el.style.setProperty("--delay", `${index * 250}ms`);
+            });
+
+            observer.current.observe(section);
+        });
+	};
+
+	useEffect(() => {
+		visualEffect();
 	}, [])
 
 	return (
