@@ -13,9 +13,11 @@
     height: calc(100vh - 80px);
     height: calc(var(--vh, 1vh) * 100 - 80px);
     overflow-y: scroll;
-    --fs-title: 26px;
-    --fs-intro: 16px;
-    scroll-snap-type: y mandatory;
+    /* --fs-title: 26px; */
+    /* --fs-intro: 16px; */
+    --fs-title: 32px;
+    --fs-intro: 18px;
+    /* scroll-snap-type: y mandatory; */
 }
 
 .home main section {
@@ -23,10 +25,13 @@
     position: relative;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
 }
 .home main section:nth-child(1) {
     height: calc(var(--vh, 1vh) * 100 - 80px);
+}
+.home main section:nth-child(4) {
+    height: calc(var(--vh, 1vh) * 100);
 }
 @media (max-height: 800px) {
     .home main section {
@@ -155,6 +160,10 @@
     align-self: start;
 }
 @media (max-width:1100px) {
+    .home main {
+       --fs-title: 26px; 
+       --fs-intro: 16px; 
+    }
     .home main section .hero__text {
         grid-template-columns: 10% 50% 30% 10%;
     }
@@ -194,8 +203,9 @@
     .home main section .hero__intro {
         text-align: center;
     }
-    .home main section .hero__title {
+    .home main section:nth-child(3) .hero__title {
         /* max-width: 13ch; */
+        width: max-content;
     }
     .home main section .hero__intro {
         max-width: 40ch;
