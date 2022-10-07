@@ -4,38 +4,60 @@ import './Portfolio.css';
 const Portfolio = () => {
 	return (
 		<div className='portfolio'>
-			<ScrollHit />
-			<Examples />
+			<Grids />
 		</div>
 	)
 };
 
 export default Portfolio;
 
-const Examples = () => {
+const Grids = () => {
 
 	return (
-		<div>	
-			<section><h1>Озеленение стен</h1></section>
-			<section></section>
-			{/* <section></section> */}
-			<section></section>
-
-			<section><h1>Панно Семья</h1></section>
-
-			<section><h1>Стол переговоров</h1></section>
-
-			<section><h1>Корзины с мхом</h1></section>
-
-			<section><h1>Озеленение помещений</h1></section>
-			<section></section>
+		<div className='portfolio-grids'>
+			<GridOne />
+			<GridTwo />
+			<GridThree />
 		</div>
 	)
 }
 
-const ScrollHit = () => {
+const GridOne = () => {
 
 	return (
-		<div className='scroll'></div>
+		<div className='grid-one'>
+			<Example image="./images/react/portfolio/moss-kashpo.jpg" />
+			<Example image="./images/react/portfolio/wall.webp" />
+			<Example image="./images/react/home/tv-cropped-compressed.webp" />
+		</div>
+	)
+}
+
+const GridTwo = () => {
+	return (
+		<div className='grid-two'>
+			<Example image="./images/react/portfolio/wall2.webp" />
+			<Example image="./images/react/portfolio/wall3.webp" />
+		</div>
+	)
+}
+
+const GridThree = () => {
+	return (
+		<div className='grid-three'>
+			<Example image="./images/react/portfolio/table.jpg" />
+		</div>
+	)
+}
+
+const Example = ({ image, title, category }) => {
+	return (
+		<figure className="img-container">
+			<img src={image}></img>
+			<figcaption className="img-content">
+				<h2 className="title">{title}</h2>
+				<h3 className="category">{category}</h3>
+			</figcaption>
+		</figure>
 	)
 }
