@@ -31,9 +31,10 @@
     grid-template-columns: repeat(4, 22%);
 }
 .portfolio .portfolio-grids .img-container {
+    position: relative;
     cursor: pointer;
     height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 35px;
     width: 100%;
 }
@@ -47,14 +48,38 @@
 .portfolio .portfolio-grids .img-container:hover img {
     transform: scale(1.05);
 }
+@media (max-width: 550px) {
+    .portfolio .portfolio-grids .img-container img {
+        transition: unset;
+    }
+    .portfolio .portfolio-grids .img-container:hover img {
+        transform: scale(1);
+    }
+}
 .portfolio .portfolio-grids .img-container .img-content {
     display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
 }
 .portfolio .portfolio-grids .img-container .img-content.is-visible {
     display: block;
 }
+.portfolio .portfolio-grids .img-container .img-content.is-visible .title {
+    font-size: 20px;
+}
+.portfolio .portfolio-grids .img-container .img-content.is-visible .category {
+    font-size: 14px;
+}
 .portfolio .portfolio-grids .img-content-hover {
-    z-index: 1;
+    pointer-events: none;
+    z-index: 2000;
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +146,6 @@
     }
     .portfolio .grid-two .img-container {
         width: auto;
-        padding: 0px 15px 0px 15px;
     }
 }
 @media (max-width: 720px) {
@@ -130,7 +154,6 @@
     }
     .portfolio .grid-one .img-container {
         width: auto;
-        padding: 0px 15px 0px 15px;
     }
     .portfolio .grid-one .img-container:nth-child(3) {
         grid-column: span 1;
@@ -146,7 +169,6 @@
     }
     .portfolio .grid-four .img-container {
         width: 100%;
-        padding: 0px 15px 0px 15px;
     }
     .portfolio .grid-four .img-container img {
         object-fit: cover;

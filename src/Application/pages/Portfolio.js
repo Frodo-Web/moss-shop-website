@@ -86,8 +86,14 @@ const Example = ({ image, title, category }) => {
 			hoverContent.current.classList.remove('is-visible');
 		} else {
 			if (e.target.tagName === 'IMG' && hoverContent && hoverContent.current) {
-				const x = e.pageX;
-				const y = e.pageY;
+				// const x = e.pageX;
+				// const y = e.pageY;
+				// const rect = e.target.getBoundingClientRect();
+				// const x = e.pageX - rect.left; 
+				// const y = e.pageY - rect.top;
+				// const y = e.pageY;
+				const x = e.pageX - e.currentTarget.offsetLeft; 
+				const y = e.pageY - e.currentTarget.offsetTop; 
 				hoverContent.current.style.transform = `translate3d(${x - 80}px, ${y - 40}px, 0)`;
 				hoverContent.current.classList.add('is-visible');
 			}
