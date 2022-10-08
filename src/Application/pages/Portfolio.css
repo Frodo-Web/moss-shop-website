@@ -44,8 +44,14 @@
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
 }
-.portfolio .portfolio-grids .img-container img:hover {
+.portfolio .portfolio-grids .img-container:hover img {
     transform: scale(1.05);
+}
+.portfolio .portfolio-grids .img-container .img-content {
+    display: none;
+}
+.portfolio .portfolio-grids .img-container .img-content.is-visible {
+    display: block;
 }
 .portfolio .portfolio-grids .img-content-hover {
     z-index: 1;
@@ -145,6 +151,9 @@
     .portfolio .grid-four .img-container img {
         object-fit: cover;
         object-position: center;
+    }
+    .portfolio .portfolio-grids .img-container .img-content {
+        display: block;
     }
 }
 @media (max-width: 450px) {

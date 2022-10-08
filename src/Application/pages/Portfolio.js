@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -65,13 +65,32 @@ const GridFour = () => {
 const Example = ({ image, title, category }) => {
 
 	const hoverContent = useRef(undefined);
+	const staticCaption = useRef(undefined);
+
+	useEffect(() => {
+		is_needed();
+	}, [])
+
+	const detect_touch_device = () => {
+		return (window.matchMedia("(pointer: coarse)").matches) ? true : false;
+	}
+
+	const is_needed = () => {
+		if(window.innerWidth <= 550 || detect_touch_device()) {
+			if(staticCaption && staticCaption.current) 	staticCaption.current.classList.add('is-visible');
+		}
+	}
 
 	const handleMove = (e) => {
-		if (e.target.tagName === 'IMG' && hoverContent && hoverContent.current) {
-			const x = e.pageX;
-			const y = e.pageY;
-			hoverContent.current.style.transform = `translate3d(${x - 80}px, ${y - 40}px, 0)`;
-			hoverContent.current.classList.add('is-visible');
+		if (window.innerWidth <= 550 || detect_touch_device()) {
+			hoverContent.current.classList.remove('is-visible');
+		} else {
+			if (e.target.tagName === 'IMG' && hoverContent && hoverContent.current) {
+				const x = e.pageX;
+				const y = e.pageY;
+				hoverContent.current.style.transform = `translate3d(${x - 80}px, ${y - 40}px, 0)`;
+				hoverContent.current.classList.add('is-visible');
+			}
 		}
 	}
 	const handleOut = (e) => {
@@ -82,7 +101,7 @@ const Example = ({ image, title, category }) => {
 	return (
 		<figure className="img-container" onMouseMove={handleMove} onMouseOut={handleOut}>
 			<img src={image}></img>
-			<figcaption className="img-content">
+			<figcaption className="img-content" ref={staticCaption}>
 				<h2 className="title">{title}</h2>
 				<h3 className="category">{category}</h3>
 			</figcaption>
