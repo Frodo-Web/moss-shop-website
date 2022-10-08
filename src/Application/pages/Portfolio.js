@@ -18,6 +18,7 @@ const Grids = () => {
 			<GridOne />
 			<GridTwo />
 			<GridThree />
+			<GridFour />
 		</div>
 	)
 }
@@ -28,7 +29,7 @@ const GridOne = () => {
 		<div className='grid-one'>
 			<Example image="./images/react/portfolio/moss-kashpo.jpg" title={'Мох в кашпо'} category={'Продукты'} />
 			<Example image="./images/react/portfolio/wall.webp" title={'Озеленение стен в офисе'} category={'Сервис'} />
-			<Example image="./images/react/home/tv-cropped-compressed.webp" title={'Озеленение стен в офисе'} category={'Сервис'}/>
+			<Example image="./images/react/home/tv-cropped-compressed.webp" title={'Озеленение стен в помещениях'} category={'Сервис'}/>
 		</div>
 	)
 }
@@ -37,7 +38,7 @@ const GridTwo = () => {
 	return (
 		<div className='grid-two'>
 			<Example image="./images/react/portfolio/wall2.webp" title={'Озеленение стен в офисе'} category={'Сервис'} />
-			<Example image="./images/react/portfolio/wall3.webp" title={'Озеленение стен в офисе'} category={'Сервис'} />
+			<Example image="./images/react/portfolio/wall3.webp" title={'Озеленение стен на предприятии'} category={'Сервис'} />
 		</div>
 	)
 }
@@ -46,6 +47,17 @@ const GridThree = () => {
 	return (
 		<div className='grid-three'>
 			<Example image="./images/react/portfolio/table.jpg" title={'Стол с мхом'} category={'Продукты'} />
+		</div>
+	)
+}
+
+const GridFour = () => {
+	return (
+		<div className='grid-four'>
+			<Example image="./images/react/catalog/moss-yagel3.jpg" title={'Стабилизированные мхи'} category={'Продукты'} />
+			<Example image="./images/react/catalog/moss-yagel4.jpg" title={'Стабилизированные мхи'} category={'Продукты'} />
+			<Example image="./images/react/catalog/moss-yagel5.jpg" title={'Стабилизированные мхи'} category={'Продукты'} />
+			<Example image="./images/react/catalog/moss-yagel9.jpg" title={'Стабилизированные мхи'} category={'Продукты'} />
 		</div>
 	)
 }

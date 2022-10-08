@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
 .portfolio {
+    font-family: "Barlow", sans-serif;
     width: 80%;
     margin: 0 auto;
+    text-rendering: optimizeLegibility;
 }
 .black-theme .portfolio {
     background-color: rgb(44, 44, 44);
@@ -16,19 +19,23 @@
     gap: 20px;
 }
 .portfolio .grid-one {
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(3, 30%);
 }
 .portfolio .grid-two {
-    grid-template-columns: 45% 45%;
+    grid-template-columns: repeat(2, 45%)
 }
 .portfolio .grid-three {
     grid-template-columns: 95%;
+}
+.portfolio .grid-four {
+    grid-template-columns: repeat(4, 22%);
 }
 .portfolio .portfolio-grids .img-container {
     cursor: pointer;
     height: 500px;
     overflow: hidden;
     border-radius: 35px;
+    width: 100%;
 }
 .portfolio .portfolio-grids .img-container img {
     border-radius: 35px;
@@ -47,9 +54,22 @@
     top: 0;
     left: 0;
     display: none;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
 }
 .portfolio .portfolio-grids .img-content-hover.is-visible {
     display: block;
+}
+.portfolio .portfolio-grids .img-content-hover .title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.portfolio .portfolio-grids .img-content-hover .category {
+    font-size: 1rem;
+    color: #cecece;
 }
 .portfolio .grid-one img {
     object-fit: cover;
@@ -64,4 +84,8 @@
 .portfolio .grid-three img {
     object-fit: cover;
     object-position: left;
+}
+.portfolio .grid-four img {
+    object-fit: cover;
+    object-position: center;
 }
