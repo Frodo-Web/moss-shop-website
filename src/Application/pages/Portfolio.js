@@ -77,7 +77,10 @@ const Example = ({ image, title, category }) => {
 
 	const is_needed = () => {
 		if(window.innerWidth <= 550 || detect_touch_device()) {
-			if(staticCaption && staticCaption.current) 	staticCaption.current.classList.add('is-visible');
+			if(staticCaption && staticCaption.current) 	{
+				staticCaption.current.classList.add('is-visible');
+				staticCaption.current.parentNode.childNodes[0].style.transition = 'unset'; // Turn off scale transition on img
+			};
 		}
 	}
 
