@@ -180,7 +180,7 @@
 }
 @media (max-width: 450px) {
     .portfolio .portfolio-grids .img-container {
-        height: 300px;
+        /* height: 300px; */
     }
     .portfolio .grid-three .img-container {
         height: 500px;
