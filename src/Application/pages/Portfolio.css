@@ -48,6 +48,20 @@
 .portfolio .portfolio-grids .img-container:hover img {
     transform: scale(1.05);
 }
+/* @media (max-width: 550px) {
+    .portfolio .portfolio-grids .img-container img {
+        transition: unset;
+    }
+    .portfolio .portfolio-grids .img-container:hover img {
+        transform: scale(1);
+    }
+} */
+.portfolio .portfolio-grids .img-container.touch img {
+    transition: unset;
+}
+.portfolio .portfolio-grids .img-container.touch:hover img {
+    transform: scale(1);
+}
 .portfolio .portfolio-grids .img-container .img-content {
     display: none;
     position: absolute;
