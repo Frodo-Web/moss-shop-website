@@ -1,5 +1,6 @@
 .body {
     position: relative;
     z-index: 1;
+    overflow: hidden;
     /* min-height: calc(100vh - 80px - 25px); */
 }

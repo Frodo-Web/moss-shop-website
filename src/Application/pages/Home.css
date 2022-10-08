@@ -179,8 +179,8 @@
     .home main section .hero__intro {
         grid-column: 2 / 3;
     }
-    .home main section .hero__intro {
-    }
+    /* .home main section .hero__intro {
+    } */
 }
 @media (max-width:635px) {
     .home main .hero__content { 
