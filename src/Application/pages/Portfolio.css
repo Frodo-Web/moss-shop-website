@@ -22,7 +22,7 @@
     grid-template-columns: repeat(3, 30%);
 }
 .portfolio .grid-two {
-    grid-template-columns: repeat(2, 45%)
+    grid-template-columns: repeat(2, 45%);
 }
 .portfolio .grid-three {
     grid-template-columns: 95%;
@@ -41,7 +41,6 @@
     border-radius: 35px;
     height: 100%;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
 }
@@ -78,7 +77,10 @@
     object-fit: cover;
     object-position: left;
 }
-.portfolio .grid-two img:nth-child(2) {
+.portfolio .grid-two .img-container:nth-child(1) > img {
+    object-position: right;
+}
+.portfolio .grid-two .img-containerimg:nth-child(2) >  {
     object-position: 100px;
 }
 .portfolio .grid-three img {
@@ -88,4 +90,76 @@
 .portfolio .grid-four img {
     object-fit: cover;
     object-position: center;
+}
+@media (max-width: 1150px) {
+    .portfolio .grid-one {
+        grid-template-columns: repeat(2, 45%);
+    }
+    .portfolio .grid-one .img-container:nth-child(3) {
+        grid-column: span 2;
+        width: auto;
+    }
+    .portfolio .grid-four {
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+@media (max-width: 800px) {
+    .portfolio {
+        width: 100%;
+    }
+    .portfolio .grid-two .img-containerimg:nth-child(2) >  {
+        object-position: center;
+    }
+    .portfolio .grid-two {
+        grid-template-columns: 100%;
+    }
+    .portfolio .grid-two .img-container {
+        width: auto;
+        padding: 0px 15px 0px 15px;
+    }
+}
+@media (max-width: 720px) {
+    .portfolio .grid-one {
+        grid-template-columns: 100%;
+    }
+    .portfolio .grid-one .img-container {
+        width: auto;
+        padding: 0px 15px 0px 15px;
+    }
+    .portfolio .grid-one .img-container:nth-child(3) {
+        grid-column: span 1;
+    }
+}
+@media (max-width: 550px) {
+    .portfolio .grid-four {
+        grid-template-columns: 100%;
+    }
+    .portfolio .grid-three .img-container img {
+        content: url(../../../docs/images/react/portfolio/table-vertical.webp);
+        object-position: 0px -100px;
+    }
+    .portfolio .grid-four .img-container {
+        width: 100%;
+        padding: 0px 15px 0px 15px;
+    }
+    .portfolio .grid-four .img-container img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio .portfolio-grids .img-container {
+        height: 300px;
+    }
+    .portfolio .grid-three .img-container {
+        height: 500px;
+    }
+    .portfolio .grid-four .img-container {
+        height: 500px;
+    }
+}
+@media (max-width: 330px) {
+    .portfolio .grid-three .img-container img {
+        object-position: 0px 0px;
+    }
 }
