@@ -108,7 +108,8 @@ const Example = ({ image, title, category }) => {
 		}
 	}
 	return (
-		<figure className="img-container" onMouseMove={handleMove} onMouseOut={handleOut}>
+		<div className='wrapper' onMouseMove={handleMove} onMouseOut={handleOut}>
+		<figure className="img-container">
 			<img src={image}></img>
 			<figcaption className="img-content" ref={staticCaption}>
 				<h2 className="title">{title}</h2>
@@ -119,5 +120,6 @@ const Example = ({ image, title, category }) => {
 				<h3 className="category">{category}</h3>
 			</span>
 		</figure>
+		</div>
 	)
 }

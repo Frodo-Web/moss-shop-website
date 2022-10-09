@@ -30,11 +30,17 @@
 .portfolio .grid-four {
     grid-template-columns: repeat(4, 22%);
 }
-.portfolio .portfolio-grids .img-container {
+.portfolio .portfolio-grids .wrapper {
     position: relative;
-    cursor: pointer;
     height: 500px;
-    /* overflow: hidden; */
+    width: 100%;
+}
+.portfolio .portfolio-grids .img-container {
+    /* position: relative; */
+    cursor: pointer;
+    /* height: 500px; */
+    height: 100%;
+    overflow: hidden;
     border-radius: 35px;
     width: 100%;
 }
@@ -48,14 +54,6 @@
 .portfolio .portfolio-grids .img-container:hover img {
     transform: scale(1.05);
 }
-/* @media (max-width: 550px) {
-    .portfolio .portfolio-grids .img-container img {
-        transition: unset;
-    }
-    .portfolio .portfolio-grids .img-container:hover img {
-        transform: scale(1);
-    }
-} */
 .portfolio .portfolio-grids .img-container.touch img {
     transition: unset;
 }
@@ -132,7 +130,7 @@
     .portfolio .grid-one {
         grid-template-columns: repeat(2, 45%);
     }
-    .portfolio .grid-one .img-container:nth-child(3) {
+    .portfolio .grid-one .wrapper:nth-child(3) {
         grid-column: span 2;
         width: auto;
     }
@@ -144,13 +142,16 @@
     .portfolio {
         width: 100%;
     }
-    .portfolio .grid-two .img-containerimg:nth-child(2) >  {
+    .portfolio .grid-two .img-container img:nth-child(2) >  {
         object-position: center;
     }
     .portfolio .grid-two {
         grid-template-columns: 100%;
     }
     .portfolio .grid-two .img-container {
+        width: auto;
+    }
+    .portfolio .grid-two .wrapper {
         width: auto;
     }
 }
@@ -161,7 +162,10 @@
     .portfolio .grid-one .img-container {
         width: auto;
     }
-    .portfolio .grid-one .img-container:nth-child(3) {
+    .portfolio .grid-one .wrapper {
+        width: auto;
+    }
+    .portfolio .grid-one .wrapper:nth-child(3) {
         grid-column: span 1;
     }
 }
@@ -176,23 +180,15 @@
     .portfolio .grid-four .img-container {
         width: 100%;
     }
+    .portfolio .grid-four .wrapper {
+        width: 100%;
+    }
     .portfolio .grid-four .img-container img {
         object-fit: cover;
         object-position: center;
     }
     .portfolio .portfolio-grids .img-container .img-content {
         display: block;
-    }
-}
-@media (max-width: 450px) {
-    .portfolio .portfolio-grids .img-container {
-        /* height: 300px; */
-    }
-    .portfolio .grid-three .img-container {
-        height: 500px;
-    }
-    .portfolio .grid-four .img-container {
-        height: 500px;
     }
 }
 @media (max-width: 330px) {
