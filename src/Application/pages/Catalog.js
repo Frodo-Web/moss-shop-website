@@ -115,7 +115,7 @@ const Cards = ({ handleClick }) => {
 				name='Панно Семья'
 				description='Панно Семья изготовление два три дня ( если нет в наличии) цвет чёрный графит( можно любой) мох зелёный
 				 (можно на выбор при наличии) Размер 1000*500( возможно других размеров) Также можно поменять семью по возрастанию детей'
-				 gallery={['./images/react/catalog/panno-family2.jpg',]}
+				gallery={['./images/react/catalog/panno-family2.jpg',]}
 				price='6,000'
 				handleClick={handleClick}
 			/>
@@ -125,6 +125,20 @@ const Cards = ({ handleClick }) => {
 				gallery={[]}
 				price='130'
 				prevPrice='200'
+				handleClick={handleClick}
+			/>
+			<Card
+				name='Озеленение помещений искусственными растениями'
+				description='Выполнение озеленения помещений искуственными растениями премиум качества! Любые формы оплаты! Визуализации проектов! Лучшие цены на рынке!'
+				gallery={['./images/react/services/ozelenenie-stabilizirovannimi.jpg', './images/react/services/tv2.jpg', './images/react/services/wall6.jpg', ]}
+				price='18,000'
+				handleClick={handleClick}
+			/>
+			<Card
+				name='Фито стены и озеленение помещений'
+				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
+				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg', './images/react/services/wall7.jpg', './images/react/services/wall8.jpg',]}
+				price='10,000'
 				handleClick={handleClick}
 			/>
 			{/* <Card

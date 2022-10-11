@@ -7,6 +7,7 @@
     margin: 0 auto;
     background-color: aliceblue;
     transition: var(--theme-transition);
+    padding-bottom: 80px;
 }
 .black-theme .catalog {
     background-color: rgb(44, 44, 44);
@@ -49,11 +50,12 @@
     background-color: rgb(216, 235, 252);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 5px;
     transition: transform 0.1s linear, var(--theme-transition);
 }
 .catalog .card:hover {
     transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 45px 20px;
 }
 .black-theme .catalog .card {
     background-color: rgb(73, 73, 73);
@@ -164,6 +166,14 @@
 }
 .catalog .card:nth-child(5) > div:nth-child(1) {
     background-image: url(./images/catalog/fern-preview.jpg);
+}
+.catalog .card:nth-child(6) > div:nth-child(1) {
+    height: 230px;;
+    background-image: url(./images/service/ozelenenie-pomesheniy.jpg);
+}
+.catalog .card:nth-child(7) > div:nth-child(1) {
+    height: 230px;
+    background-image: url(./images/service/fito-design.jpg);
 }
 /* .catalog .card:nth-child(9) > div:nth-child(1) {
     background-image: url(./images/catalog/eucalyptus-baby-preview.jpg);
