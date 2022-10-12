@@ -28,7 +28,7 @@ const PopUpOnClick = () => {
 				<div className='popup-form'>
 					<div>Обратная связь</div>
 					<div>
-						<a href="https://wa.me/89052232327">Написать WhatsApp</a>
+						<a href="https://wa.me/79052232327">Написать WhatsApp</a>
 					</div>
 				</div>
 			</div>
