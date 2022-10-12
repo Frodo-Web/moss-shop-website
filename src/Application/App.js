@@ -19,7 +19,8 @@ const App = () => {
 			<Loader />
 			<div className='moss-shop-wrapper'>
 				<Layout />
-				<PopUps />
+				<PopUp />
+				<PopUpOnClick />
 			</div>
 		</>
 	)
@@ -34,16 +35,6 @@ const Layout = () => {
 			<Header />
 			<Body />
 			<Footer />
-		</div>
-	)
-}
-
-const PopUps = () => {
-
-	return (
-		<div className='popUps'>
-			<PopUp />
-			<PopUpOnClick />
 		</div>
 	)
 }

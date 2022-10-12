@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './PopUpOnClick.css';
 
 const PopUpOnClick = () => {
+	const popupClick = useRef(undefined);
+	const popupWrapper = useRef(undefined);
+
+	const handlePopupClick = () => {
+		popupClick.current.classList.remove('is-visible');
+		if (popupWrapper && popupWrapper.current) {
+			popupWrapper.current.classList.add('is-visible');
+		}
+	}
+	const handleWrapperClick = () => {
+		popupWrapper.current.classList.remove('is-visible');
+		if (popupClick && popupClick.current) {
+			popupClick.current.classList.add('is-visible');
+		}
+	}
+
 	return (
 		<>
-			{/* <h2>PopUpOnClick</h2> */}
+			<div className='popup-click is-visible' ref={popupClick} onClick={handlePopupClick}>
+				<div className='circle'>
+				</div>
+			</div>
+			<div className='popup-form-wrapper' ref={popupWrapper} onClick={handleWrapperClick}>
+				<div className='popup-form'>
+					<div>Обратная связь</div>
+					<div>
+						<a href="https://wa.me/89052232327">Написать WhatsApp</a>
+					</div>
+				</div>
+			</div>
 		</>
 	)
 };
