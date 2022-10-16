@@ -58,21 +58,37 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
 
     const telephoneInput = useRef(null);
     const [wishesText, setWishesText] = useState("");
+    const [clientName, setClientName] = useState("");
 
     const handleOrderClick = (event) => {
         event.preventDefault();
-        if(telephoneInput?.current.value !== undefined && telephoneInput?.current.value.length !== 15) { 
+        if (telephoneInput?.current.value !== undefined && telephoneInput?.current.value.length !== 15) {
             telephoneInput.current.classList.add("invalid");
             event.target.previousSibling.textContent = 'Пожалуйста, правильно укажите ваш номер телефона';
         } else if (wishesText.length > 1350) {
             event.target.previousSibling.textContent = 'Текст пожеланий слишком большой';
         } else {
             event.target.previousSibling.textContent = 'Спасибо за заказ! В ближайшее время мы с вами свяжемся.';
-            console.log('Success logic');
-        } 
+            (async () => {
+                const rawResponse = await fetch('/order', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ countryCode: telephoneInput.current.previousSibling.textContent, phone: telephoneInput.current.value, name: clientName, wishes: wishesText })
+                });
+                const content = await rawResponse.json();
+
+                console.log(content);
+            })();
+        }
     }
     const onWishesChange = (event) => {
         setWishesText(event.target.value);
+    }
+    const onNameChange = (event) => {
+        setClientName(event.target.value);
     }
     const style = (image) => {
         return { backgroundImage: image }
@@ -122,7 +138,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                     <label htmlFor='tel'>Укажите ваш номер: </label>
                     <Telephone telephoneInputHook={telephoneInput} />
                     <label htmlFor='clientName'>Ваше имя: </label>
-                    <input type='text' id='clientName' placeholder='...' required/>
+                    <input type='text' id='clientName' onChange={onNameChange} placeholder='...' required />
                     <label htmlFor='wishes'>Ваши пожелания: </label>
                     <textarea id='wishes' onChange={onWishesChange}></textarea>
                     <div className='info'></div>
