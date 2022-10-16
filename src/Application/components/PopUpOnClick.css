@@ -53,6 +53,18 @@
     background-color: rgba(0, 0, 0, 0.7);
     transition: transform 2s ease-out;
     transform: scale(0);
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+}
+.popup-form > div > a {
+    text-decoration: underline;
+    color: white;
 }
 .popup-form-wrapper.is-visible .popup-form {
     transform: scale(1);
