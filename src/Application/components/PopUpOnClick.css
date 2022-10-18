@@ -3,7 +3,7 @@
     position: fixed;
     right: 4%;
     bottom: 4%;
-    z-index: 5000;
+    z-index: 900;
     cursor: pointer;
 }
 .popup-click.is-visible {
@@ -37,7 +37,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 5000;
+    z-index: 900;
     background-color: rgba(0, 0, 0, 0.1);
 }
 .popup-form-wrapper.is-visible {
@@ -45,7 +45,7 @@
 }
 .popup-form {
     position: fixed;
-    z-index: 5000;
+    z-index: 900;
     right: 4%;
     bottom: 4%;
     width: 300px;

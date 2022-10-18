@@ -11,7 +11,7 @@ const PopUpOnClick = () => {
 			popupWrapper.current.classList.add('is-visible');
 		}
 	}
-	const handleWrapperClick = () => {
+	const handleWrapperEvent = () => {
 		popupWrapper.current.classList.remove('is-visible');
 		if (popupClick && popupClick.current) {
 			popupClick.current.classList.add('is-visible');
@@ -24,7 +24,7 @@ const PopUpOnClick = () => {
 				<div className='circle'>
 				</div>
 			</div>
-			<div className='popup-form-wrapper' ref={popupWrapper} onClick={handleWrapperClick}>
+			<div className='popup-form-wrapper' ref={popupWrapper} onClick={handleWrapperEvent} onWheel={handleWrapperEvent} onTouchMove={handleWrapperEvent}>
 				<div className='popup-form'>
 					<div>Обратная связь</div>
 					<div>
