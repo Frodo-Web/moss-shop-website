@@ -76,7 +76,7 @@ const Form = ({ image, name, description, gallery, price, firstElement }) => {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ countryCode: telephoneInput.current.previousSibling.textContent, phone: telephoneInput.current.value, name: clientName, wishes: wishesText })
+                    body: JSON.stringify({ countryCode: telephoneInput.current.previousSibling.textContent, phone: telephoneInput.current.value, order: name, name: clientName, wishes: wishesText })
                 });
                 const content = await rawResponse.json();
 
