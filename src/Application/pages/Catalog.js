@@ -69,6 +69,28 @@ const Cards = ({ handleClick }) => {
 	return (
 		<>
 			<Card
+				name='Мох стабилизированный, Ягель'
+				description='Мох стабилизированный Ягель. Производство в Санкт-Петербурге. Мох отборый крупный не укроп))) Выгодные тарифы на доставку.'
+				gallery={['./images/react/catalog/moss-yagel.jpg', './images/react/catalog/moss-yagel2.jpg', './images/react/catalog/moss-yagel3.jpg', './images/react/catalog/moss-yagel4.jpg', './images/react/catalog/moss-yagel5.jpg', './images/react/catalog/moss-yagel6.jpg', './images/react/catalog/moss-yagel7.jpg', './images/react/catalog/moss-yagel8.jpg', './images/react/catalog/moss-yagel9.jpg', './images/react/catalog/moss-yagel10.jpg', './images/react/catalog/moss-yagel11.jpg', './images/react/catalog/moss-yagel12.jpg', './images/react/catalog/moss-yagel13.jpg', './images/react/catalog/moss-yagel14.jpg', './images/react/catalog/moss-yagel15.jpg',]}
+				price='1,500'
+				prevPrice='3,000'
+				handleClick={handleClick}
+			/>
+			<Card
+				name='Фито стены и озеленение помещений'
+				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
+				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg', './images/react/services/wall7.jpg', './images/react/services/wall8.jpg',]}
+				price='10,000'
+				handleClick={handleClick}
+			/>
+			<Card
+				name='Озеленение помещений искусственными растениями'
+				description='Выполнение озеленения помещений искуственными растениями премиум качества! Любые формы оплаты! Визуализации проектов! Лучшие цены на рынке!'
+				gallery={['./images/react/services/ozelenenie-stabilizirovannimi.jpg', './images/react/services/tv2.jpg', './images/react/services/wall6.jpg', ]}
+				price='18,000'
+				handleClick={handleClick}
+			/>
+			<Card
 				name='Мох в сотах'
 				description='Мох в раме сотах чёрный графит. Размер от 22-32 см. Изготовление на заказ за один день.'
 				gallery={['./images/react/catalog/moss-graphite-frame-2.jpg','./images/react/catalog/moss-graphite-frame-3.jpg','./images/react/catalog/moss-white-frame-1.jpg','./images/react/catalog/black-square-with-moss.jpg', './images/react/catalog/moss-frames-on-wall.jpg',]}
@@ -90,14 +112,6 @@ const Cards = ({ handleClick }) => {
 				prevPrice='1,600'
 				handleClick={handleClick}
 			/> */}
-			<Card
-				name='Мох стабилизированный, Ягель'
-				description='Мох стабилизированный Ягель. Производство в Санкт-Петербурге. Мох отборый крупный не укроп))) Выгодные тарифы на доставку.'
-				gallery={['./images/react/catalog/moss-yagel.jpg', './images/react/catalog/moss-yagel2.jpg', './images/react/catalog/moss-yagel3.jpg', './images/react/catalog/moss-yagel4.jpg', './images/react/catalog/moss-yagel5.jpg', './images/react/catalog/moss-yagel6.jpg', './images/react/catalog/moss-yagel7.jpg', './images/react/catalog/moss-yagel8.jpg', './images/react/catalog/moss-yagel9.jpg', './images/react/catalog/moss-yagel10.jpg', './images/react/catalog/moss-yagel11.jpg', './images/react/catalog/moss-yagel12.jpg', './images/react/catalog/moss-yagel13.jpg', './images/react/catalog/moss-yagel14.jpg', './images/react/catalog/moss-yagel15.jpg',]}
-				price='1,500'
-				prevPrice='3,000'
-				handleClick={handleClick}
-			/>
 			<Card
 				name='Фито композиции'
 				description='Спил грецкого ореха,. Обработка маслом. Мох по желанию.'
@@ -125,20 +139,6 @@ const Cards = ({ handleClick }) => {
 				gallery={[]}
 				price='130'
 				prevPrice='200'
-				handleClick={handleClick}
-			/>
-			<Card
-				name='Озеленение помещений искусственными растениями'
-				description='Выполнение озеленения помещений искуственными растениями премиум качества! Любые формы оплаты! Визуализации проектов! Лучшие цены на рынке!'
-				gallery={['./images/react/services/ozelenenie-stabilizirovannimi.jpg', './images/react/services/tv2.jpg', './images/react/services/wall6.jpg', ]}
-				price='18,000'
-				handleClick={handleClick}
-			/>
-			<Card
-				name='Фито стены и озеленение помещений'
-				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
-				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg', './images/react/services/wall7.jpg', './images/react/services/wall8.jpg',]}
-				price='10,000'
 				handleClick={handleClick}
 			/>
 			{/* <Card

@@ -9,6 +9,10 @@ exports.order_POST = async (req, res, next) => {
 
         axios.get(`https://api.telegram.org/bot5748081196:AAEBRXwAQWwehwXD7Mnkz88jzNw11vS4kxk/sendMessage?chat_id=-1001661063232&text=Поступил%20заказ%20с%20номера:%20➡️%20%2b${countryCode}%20${phone}%20⬅️,%20клиента%20заинтересовал%20продукт:➡️%20${order}%20⬅️,%20клиент%20представился%20как%20➡️%20${name}%20⬅️и%20написал%20следующие%20пожелания:%20➡️%20${wishes}%20⬅️`).then(resp => {
             console.log(resp.data);
+	    res.status(200).json({ success: 'Ordered successfully' });
+    }).catch(error => {
+	    console.log(error);
+	    res.status(400).json({ error: 'Order: something went wrong!' });
     });
     } catch (err) {
         return next(err);
