@@ -77,6 +77,13 @@ const Cards = ({ handleClick }) => {
 				handleClick={handleClick}
 			/>
 			<Card
+				name='Кочанка европейская'
+				description='Производство в Санкт-Петербурге. Выгодные тарифы на доставку.'
+				gallery={['./images/react/catalog/kochanka-evropeiskaya.jpg',]}
+				price='2,000'
+				handleClick={handleClick}
+			/>
+			<Card
 				name='Фито стены и озеленение помещений'
 				description='Фито дизайн помещений. Выполняем стабилизированными растениями своего производства! Лучше цены в России! Любые формы оплаты!'
 				gallery={['./images/react/services/tv.jpg', './images/react/services/wall1.jpg', './images/react/services/wall2.jpg', './images/react/services/wall3.jpg', './images/react/services/wall4.jpg', './images/react/services/wall5.jpg', './images/react/services/wall7.jpg', './images/react/services/wall8.jpg',]}

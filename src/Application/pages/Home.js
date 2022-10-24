@@ -62,7 +62,8 @@ const Content = () => {
 					</div>
 					<div className="hero__content" data-content>
 						<div className="hero__text">
-							<img className="hero__footprint" src="./images/react/home/kochanka.jpg" alt="Мох Кочанка"></img>
+							{/* <img className="hero__footprint" src="./images/react/home/kochanka.jpg" alt="Мох Кочанка"></img> */}
+							    <img className="hero__footprint" src="./images/react/catalog/moss-yagel.jpg" alt="Мох Ягель"></img>
 								<h1 className="hero__title">Mox'Pro</h1>
 								<p className="hero__intro">Мы производство стабилизированного мха и растений. Изготавливаем фито стены и композиции из растений без ухода</p>
 						</div>
