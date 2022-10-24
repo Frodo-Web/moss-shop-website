@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 31
+    },
+    "auditLog": "C:\\Users\\cirno\\Downloads\\Projects\\moss-shop-website\\server\\logs\\.46d4e13af11ae76a21454684d1398e899e9ed476-audit.json",
+    "files": [
+        {
+            "date": 1666626598770,
+            "name": "C:\\Users\\cirno\\Downloads\\Projects\\moss-shop-website\\server\\logs\\moxpro-2022-10-24.log",
+            "hash": "840041c010a01fb4e64e4a4b6987f9e10335471a1f754f5af7a1b0b703a07f14"
+        }
+    ],
+    "hashType": "sha256"
+}

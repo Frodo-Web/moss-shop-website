@@ -1,0 +1,7 @@
+{
+    "port": 80,
+    "logConfig": {
+        "logDirectory":  "./logs",
+        "logFile": "moxpro-%DATE%.log"
+    }
+}
