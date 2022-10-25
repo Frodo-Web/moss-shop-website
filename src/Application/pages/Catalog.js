@@ -77,7 +77,7 @@ const Cards = ({ handleClick }) => {
 				handleClick={handleClick}
 			/>
 			<Card
-				name='Кочанка европейская'
+				name='Кочка европейская'
 				description='Производство в Санкт-Петербурге. Выгодные тарифы на доставку.'
 				gallery={['./images/react/catalog/kochanka-evropeiskaya.jpg',]}
 				price='2,000'

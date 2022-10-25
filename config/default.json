@@ -1,7 +1,15 @@
 {
     "port": 80,
-    "logConfig": {
+    "infoLogConfig": {
         "logDirectory":  "./logs",
-        "logFile": "moxpro-%DATE%.log"
+        "logFile": "info-moxpro-%DATE%.log"
+    },
+    "errorLogConfig": {
+        "logDirectory":  "./logs",
+        "logFile": "error-moxpro-%DATE%.log"
+    },
+    "debugLogConfig": {
+        "logDirectory":  "./logs",
+        "logFile": "debug-moxpro-%DATE%.log"
     }
 }
