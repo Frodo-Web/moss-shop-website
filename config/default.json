@@ -1,15 +1,19 @@
 {
     "port": 80,
-    "infoLogConfig": {
+    "connectionsLog": {
         "logDirectory":  "./logs",
-        "logFile": "info-moxpro-%DATE%.log"
+        "logFile": "connections-moxpro-%DATE%.log"
     },
-    "errorLogConfig": {
+    "connectionErrorLog": {
         "logDirectory":  "./logs",
-        "logFile": "error-moxpro-%DATE%.log"
+        "logFile": "error-connections-moxpro-%DATE%.log"
     },
-    "debugLogConfig": {
+    "runtimeLog": {
         "logDirectory":  "./logs",
-        "logFile": "debug-moxpro-%DATE%.log"
+        "logFile": "runtime-moxpro-%DATE%.log"
+    },
+    "runtimeErrorLog": {
+        "logDirectory":  "./logs",
+        "logFile": "error-runtime-moxpro-%DATE%.log"
     }
 }

@@ -14,7 +14,8 @@ const appDir = dirname(require.main.filename);
 const config = require('config');
 const express = require('express');
 const historyAPIfallback = require("./middleware/historyAPIfallback");
-const logger = require("../lib/logger");
+const container = require("../lib/logger");
+const runtime = container.get('runtime');
 const logging = require("./middleware/logging");
 
 const app = express();
@@ -27,7 +28,23 @@ app.use(express.json());
 
 app.use('/', require('./routes/index'));
 
+// app.use(function(req, res, next) {
+// 	res.status(404);
+  
+// 	if (req.accepts('html')) {
+// 	  res.render('404', { url: req.url });
+// 	  return;
+// 	}
+  
+// 	if (req.accepts('json')) {
+// 	  res.json({ error: 'Not found' });
+// 	  return;
+// 	}
+  
+// 	res.type('txt').send('Not found');
+//   });
+
 app.listen(port, function () {
 	console.log(`listening on port ${port}`);
-	logger.debug(`listening on port ${port}`)
+	runtime.info(`listening on port ${port}`);
 });
