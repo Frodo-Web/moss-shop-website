@@ -4,7 +4,7 @@
 # Release (Production)
 [mox-pro.ru](https://mox-pro.ru) 
 ### Cloudflare IPs update scheduling
-Since the server allow connections from Cloudflare only, it's good to check if Cloudflare change its IPs to automatically add them to Firewall.
+Since the server allow connections from Cloudflare servers only, we need to check if Cloudflare changed its IPs to automatically add and allow them to Firewall.
 Open crontab:
 ````
 sudo crontab -e
