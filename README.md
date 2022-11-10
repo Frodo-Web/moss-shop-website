@@ -4,7 +4,7 @@
 ### Release
 [mox-pro.ru](https://mox-pro.ru) 
 # Rotating logs system
-Logs rotation (lifetime) is 31 days. The max filesize is 2MB. Logs get compressed on the second day. <br> <br>
+Logs rotation (lifetime) is 31 days. The max filesize is 2MB. Logs get compressed on the second day. Logs directory by default is /logs <br> <br>
 These are file templates: 
 - connections-moxpro-%DATE%.log(?.gz) - logs the connections, server access data (an example below)
 - runtime-moxpro-%DATE%.log(?.gz) - logs all the logic the server does (an example below)
