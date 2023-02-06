@@ -1,8 +1,6 @@
 # moss-shop-website
-### Current development version (Github Pages)
+### Current version (Github Pages)
 [frodo-web.github.io/moss-shop-website](https://frodo-web.github.io/moss-shop-website/) 
-### Release
-[mox-pro.ru](https://mox-pro.ru) 
 # Rotating logs system
 Logs rotation (lifetime) is 31 days. The max filesize is 2MB. Logs get compressed on the second day. Logs directory by default is /logs <br> <br>
 These are file templates: 
